@@ -9,7 +9,7 @@ It includes:
 ***
 3) An HTML file with the structure of my portfolio
 ***
-4) A CSS empty file
+4) An empty CSS file
 ***
 5) Profile picture
 ***
