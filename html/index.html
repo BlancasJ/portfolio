@@ -4,6 +4,7 @@
   <head>
     <!-- Genral Info -->
     <title>Portfolio</title>
+    <link rel="icon" href="../images/icon.png">
     <meta charset="utf-8">
     <meta name="description" content="A little bit of my professional path, skills, projects">
     <meta name="keywords" content="skills, projects, overview">
@@ -14,101 +15,93 @@
   </head>
 
   <body>
-    <header id="title">
-      <img src="../images/myself.jpg" alt="Myself" with=35px height=35px id="profile_photo"> 
-      <h1 id="name">Jorge Blancas Cruz</h1>
-      <h2 id="career">Computational Embedded Systems Engineer</h2>
-    </header>
-    <hr>
-    <nav class="menu">
-      <ul>
-        <li><a href="#Menu">Menu</a></li>
-        <li><a href="#overview" target="_self">Overview</a></li>
-        <li><a href="#skills" target="_self">Skills</a></li>
-        <li><a href="#projects" target="_self">Projects</a></li>
-        <li><a href="#contact" target="_self">Contact me</a></li>
-      </ul>
-    </nav>
-    <hr>
-    <section id="overview">
-      <h2>
-        Profile
-      </h2>
-      <p> 
-        A responsible, proactive, and creative recent graduated with the ability to work as a team, who always tries to think of a way to solve the problems that may arise. Keeping on going until the goal has met. Nevertheless, a flexible person who can change the strategies according to the needs.
-      </p>
-      <h2>
-        Education
-      </h2>
-      <p>
-        Computational Embedded Systems Engineering at the Universidad Politécnica de Yucatán from september 2016 to april 2020.
-      </p>
-     
-    </section>
-    <hr>
-    <section id="skills">
-      <h2>
-        Skills
-      </h2>
-      <ul>
-        <li>Programming languages:
-          <ul>
-            <li>C</li>
-            <li>M</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-          </ul>
-        </li>
-        <li>Computing technologies:
-          <ul>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Microsoft Office</li>
-          </ul>
-        </li>
-        <li>OS:
-          <ul>
-            <li>Windows</li>
-            <li>Linux</li>
-          </ul>
-        </li>
-        <li>Programmable devices:
-          <ul>
-            <li>Developments boards</li>
-            <li>PLCs</li>
-            <li>FPGA</li>
-            <li>Microcontrollers</li>
-          </ul>
-        </li>
-        <li>PCB design in EAGLE</li>
-        <li>Version Control System</li>
-      </ul>
-    </section>
-    <hr>
-    <section id="projects">
-      <h2>Projects</h2>
-      <h4>Real Time System for Object Counting</h4>
-      <p> Develop a system for counting objects in real time at Vazlo S.A. de C.V. by using computer vision and automation as degree’s project from January 2020 to April 2020.</p>
-      <h4>Control Automation</h4>
-      <p>Automate school equipment by PLC programming, send data to a server and build a web site to view the information.</p>
-      <h4>Autonomous Orchard</h4>
-      <p>Program an Intel Edison board to read sensors, turn on/off an electrical pump and send sensors data to a local server.</p>
-    </section>
-    <hr>
-    <footer id="contact">
-      <h5>
-        Contact me
-      </h5>
-      <ul>
-        <li>Location: M&eacute;rida, Yucat&aacute;n</li>
-        <li>Cellphone: 9992307290</li>
-        <li>Email: Jorge.Blancas@theksquaregroup.com</li>
-        <li><a href="https://www.linkedin.com/in/jorge-blancas-cruz-4b6b311aa" target="_blank">Visit my LinKedin profile</a></li>
-      </ul>
-
-
-    </footer>
-
+    <main id="gridContainer">
+      <nav id="navGridItem">
+        <ul id="navFlexContainer">
+          <li class="navItemFlex"><a href="">Menu</a></li>
+          <li class="navItemFlex"><a href="index.html" target="_self">About Me</a></li>
+          <li class="navItemFlex"><a href="professionalPath.html" target="_self">Professional Path</a></li>
+          <li class="navItemFlex"><a href="projects.html" target="_self">Projects</a></li>
+        </ul>
+      </nav>
+      <section id="myselfTitle">
+        <div id="myselfTitleFlexContainer">
+          <h1 id="myselfTitleItemFlex">Who am I?</h1>
+        </div>
+      </section>
+      <section id="myselfInfo">
+        <div id="myselfFlexContainer">
+          <img src="../images/myself2.jpg" alt="" class="myselfItemFlex" id="myPhoto">
+          <div class="myselfItemFlex">
+            <h1 id="myName">Jorge Blancas Cruz</h1>
+            <p id="myInfo">Graduated from Computational Embedded Systems engineering. An enthusiast when it comes to technology and innovation, who always tries to think of a way to solve the problems that may arise. Not giving up easily, keeping on going until the goal has met. Nevertheless, a flexible person who can change the strategies according to the needs.</p>
+          </div>
+        </div>
+      </section>
+      <section id="educationTitle">
+        <div id="educationTitleFlexContainer">
+          <h1 id="educationTitleItemFlex">Education</h1>
+        </div>
+      </section>
+      <section id="education">
+        <div id="educationFlexContainer">
+          <img src="../images/upy2.png" alt="" class="educationItemFlex" id="schoolLogo">
+          <div id="educationItemFlex">
+            <h1 id="schoolName">Universidad Politecnica de Yucatan</h1>
+            <p id="schoolInfo">Computational Embedded Systems Engineering from september 2016 to april 2020.</p>
+          </div>
+        </div>
+      </section>
+      <section id="skillsTitle">
+        <div id="skillsTitleFlexContainer">
+          <h1 id="skillsTitleItemFlex">Technologies</h1>
+        </div>
+      </section>
+      <section id="skills">
+        <ul id="skillsFlexContainer">
+            <li class="skillsItemFles"><img src="../images/skills/python2.png" alt="Python" class="skillsImage" id="python"></li>
+            <li class="skillsItemFles"><img src="../images/skills/c2.png" alt="C programming" class="skillsImage" id="cp"></li>
+            <li class="skillsItemFles"><img src="../images/skills/js2.png" alt="JavaScript" class="skillsImage" id="js"></li>
+            <li class="skillsItemFles"><img src="../images/skills/html2.png" alt="HTML" class="skillsImage" id="htmli"></li>
+            <li class="skillsItemFles"><img src="../images/skills/css2.png" alt="CSS" class="skillsImage" id="cssi"></li>
+            <li class="skillsItemFles"><img src="../images/skills/git.png" alt="Git" class="skillsImage" id="git"></li>
+            <li class="skillsItemFles"><img src="../images/skills/latex.png" alt="LaTex" class="skillsImage" id="latex"></li>
+            <li class="skillsItemFles"><img src="../images/skills/vhdl2.png" alt="VHDL" class="skillsImage" id="vhdl"></li>
+            <li class="skillsItemFles"><img src="../images/skills/picc2.PNG" alt="Pic C Compiler" class="skillsImage" id="picc"></li>
+            <li class="skillsItemFles"><img src="../images/skills/proteus2.png" alt="Proteus 8" class="skillsImage" id="proteus"></li>
+            <li class="skillsItemFles"><img src="../images/skills/arduino.png" alt="Arduino" class="skillsImage" id="arduino"></li>
+            <li class="skillsItemFles"><img src="../images/skills/keil2.png" alt="Keil U-vision" class="skillsImage" id="keil"></li>
+            <li class="skillsItemFles"><img src="../images/skills/psoc2.png" alt="PSoC" class="skillsImage" id="psoc"></li>
+            <li class="skillsItemFles"><img src="../images/skills/labview2.png" alt="LabView" class="skillsImage" id="labview"></li>
+            <li class="skillsItemFles"><img src="../images/skills/siemens_tia.png" alt="Siemens Tia Portal Software" class="skillsImage" id="tia"></li>
+            <li class="skillsItemFles"><img src="../images/skills/gx2.png" alt="Mitsubishi electric gx works 3 software" class="skillsImage" id="gx"></li>
+            <li class="skillsItemFles"><img src="../images/skills/raspbian2.png" alt="Raspbian" class="skillsImage" id="rasp"></li>
+            <li class="skillsItemFles"><img src="../images/skills/eagle2.png" alt="Eagle Autodesk PCB design" class="skillsImage" id="eagle"></li>
+            <li class="skillsItemFles"><img src="../images/skills/orcad.png" alt="OrCAD PCB design" class="skillsImage" id="orcad"></li>
+            <li class="skillsItemFles"><img src="../images/skills/matlab2.png" alt="Matlab" class="skillsImage" id="matlab"></li>
+        </ul>
+      </section>
+      <section id="hobbiesTitle">
+        <div id="hobbiesTitleFlexContainer">
+          <h1 id="hobbiesTitleItemFlex">Hobbies</h1>
+        </div>
+      </section>
+      <section id="hobbies">
+        <ul id="hobbiesFlexContainer">
+          <li class="hobbiesItemFlex">Cooking</li>
+          <li class="hobbiesItemFlex">Watch anime</li>
+          <li class="hobbiesItemFlex">Read</li>
+          <li class="hobbiesItemFlex">Challenge myself</li>
+        </ul>
+      </section>
+      <footer class="footerGridItem">
+        <ul id="footerFlexContainer">
+          <li class="footerItemFlex"><a href="https://github.com/BlancasJ" target="_blank"><img src="../images/footer/github.png" alt="GitHub Account" class="footerImage"></a></li>
+          <li class="footerItemFlex"><a href="mailto:Jorge.Blancas@theksquaregroup.com" target="_blank"><img src="../images/footer/mail.png" alt="mail" class="footerImage"></a></li>
+          <li class="footerItemFlex"><a href="https://www.linkedin.com/in/jorge-blancas-cruz-4b6b311aa/" target="_blank"><img src="../images/footer/linkedin.png" alt="Linkedin Account" class="footerImage"></a></li>
+        </ul>
+      </footer>
+    </main>
   </body>
 
 </html>
