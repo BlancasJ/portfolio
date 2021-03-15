@@ -1,16 +1,14 @@
 # portfolio
-Draft of my working portfolio.
+My portfolio
 ***
-It includes:
 ***
 1) A draft of the portfolio in pdf
 ***
-2) Image of the CSS activity (the one about dishes)
+2) Images
 ***
-3) An HTML file with the structure of my portfolio
+3) html index
 ***
-4) An empty CSS file
+4) css index
 ***
-5) Profile picture
-***
+It is the first page called about me, I must add the projects and professional path pages
 
