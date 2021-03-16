@@ -1,4 +1,5 @@
 html, body {
+  margin: 0;
   height: 100%;
 }
 body{
@@ -11,8 +12,9 @@ body{
 
 #gridContainer {
   display: grid;
-  grid-template-rows: min-content min-content auto min-content auto min-content auto min-content auto min-content;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
   grid-template-columns: auto;
+  /*height: 100vh;*/
 }
 
 /** NAV MENU  **/
@@ -101,11 +103,17 @@ body{
   align-items: left;
 }
 
-.myselfItemFlex {
+#myselfItemFlexC {
   margin: 5px;
+  flex-grow: 2;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  
+}
+
+#myselfItemFlexC:nth-child(2) {
+  flex-grow: 2;
 }
 
 #myPhoto {
@@ -117,8 +125,7 @@ body{
 
 #myName {
   margin: 5px 0px 20px 0px;
-  width: 500px;
-  height: 20px;
+  width: 450px;
   padding: 5px;
   font-size: 30px;
   font-style: oblique;
@@ -128,8 +135,7 @@ body{
 
 #myInfo {
   margin: 5px;
-  width: 500px;
-  height: 40px;
+  width: 450px;
   padding: 5px;
   font-size: 20px;
   font-style: oblique;
@@ -180,7 +186,7 @@ body{
   align-items: stretch;
 }
 
-.educationItemFlex {
+#educationItemFlex {
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -189,9 +195,8 @@ body{
 
 #schoolName {
   /*margin: 5px 0px 20px 0px;*/
-  width: 500px;
-  height: 20px;
-  padding: 5px;
+  width: 450px;
+  padding: 2px;
   font-size: 30px;
   font-style: oblique;
   color: #0cb5d3;
@@ -199,9 +204,8 @@ body{
 }
 
 #schoolInfo {
-  margin: 5px;
-  width: 500px;
-  height: 40px;
+  margin: 0px 5px 5px 5px;
+  width: 450px;
   padding: 5px;
   font-size: 20px;
   font-style: oblique;
