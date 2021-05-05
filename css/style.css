@@ -1,0 +1,1479 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* global style */
+/* define custom css variables */
+:root {
+  /* colors to use as background */
+  --bg-black-900: #000000;
+  --bg-black-100: #dddddd;
+  --bg-black-50: #eff0f4;
+  --bg-opacity: rgba(255, 255, 255, 0.5);
+  /* color for text */
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+  /* set offset-x | offset-y | blur-radius to make an outer shadow*/
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+  /* set offset-x | offset-y | blur-radius to make an inner shadow*/
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset 0 0 0 #f8f8f8;
+  --inner-shadow-0: inset 0 0 0 #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  /* colors to used in portfolio*/
+  --skin-color-1:#fb839e;
+  --skin-color-2:#ec9412;
+  --skin-color-3:#1fc586;
+  --skin-color-4:#2eb1ed;
+  --skin-color-5:#cc3a3b;
+}
+
+/* define some body variables */
+body {
+  font-size: 16px;
+  /* line spacing of 1.6 which is a recommended one*/
+  line-height: 1.6;
+  /* if content overflows to left or rigth hide it */
+  overflow-x: hidden;
+  background-color: var(--bg-black-50);
+}
+
+body.hide-scrolling {
+  /* if content overflows to top or bottom hide it */
+  overflow-y: hidden;
+}
+
+/*Add font family to all elements except i*/
+*:not(i) {
+  font-family: 'Raleway', sans-serif;
+  /* define how thin or thick characters will be 400 is normal*/
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* padding and border are part of height and width*/
+  box-sizing: border-box;
+  /* not use outline which is a line that covers border*/
+  outline: none;
+}
+
+/* after selector inserts something after content, before selector insert something before content*/
+::before, ::after {
+  /* padding and border are part of height and width*/
+  box-sizing: border-box;
+}
+
+a {
+  /* remove the default line that a elements have */
+  text-decoration: none;
+}
+
+ul {
+  /* remove the points which ul children have*/
+  list-style: none;
+  /* with margin and padding in zero there is not indentation*/
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* class to contain sections */
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* class to make a 'row', displaying flex */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* class to justify content between it must be used with a flex container (row)*/
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* align items center use it with flex container like row class */
+.align-itmes-center {
+  align-items: center;
+}
+
+/* create the effect of an element is 'on/over' the background */
+.outer-shadow {
+  box-shadow: var(--outer-shadow);
+}
+
+/* create the effect of 'sink' of an ellement*/
+.inner-shadow {
+  box-shadow: var(--inner-shadow);
+}
+
+/* to pass the z-index of a parameter to move under the background */
+.hover-in-shadow {
+  position: relative;
+  z-index: 1;
+}
+
+/* when hover an item with this class create the effect of the item is one with the background */
+.hover-in-shadow:hover {
+  box-shadow: var(--outer-shadow-0);
+}
+
+/* use after to create an empty content which uses the same space as the original one but is in a different index to have to effects at the same time the outer 0 and inner  */
+.hover-in-shadow::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+/* sink the content when hover */
+.hover-in-shadow:hover::after {
+  box-shadow: var(--inner-shadow);
+}
+
+/*  */
+.btn-1 {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;;
+  color: var(--skin-color-3);
+  line-height: 1.6;
+  cursor: pointer;
+  border-radius: 30px;
+  /* specifies a transition effect with a slow start, then fast, then end slowly  */
+  transition: all 0.3s ease;
+  /*inline block display content from left to right as boxes*/
+  display: inline-block;
+  border: none;
+}
+
+.btn-1::after {
+  border-radius: 30px;
+}
+
+/* container of the effect in home page  */
+/* home section has relative position to allow display effects in a specific position */
+.effect-wrap .effect {
+  position: absolute;
+  z-index: -1;
+}
+
+/***** effects  *****/
+.effect-1 {
+  right: 10%;
+  bottom: 10%;
+  font-size: 30px;
+  color: rgb(125, 220, 233);
+  animation: spin 5s linear infinite;
+}
+
+.effect-2 {
+  left: 3%;
+  bottom: 20%;
+  font-size: 30px;
+  color: rgb(125, 233, 125);
+  animation: topBounce 3s linear infinite;
+}
+
+.effect-3 {
+  left: 50%;
+  top: -10%;
+  font-size: 100px;
+  color: var(--skin-color-3);
+  animation: leftBounce 3s linear infinite;
+}
+
+.effect-4 {
+  left: 30%;
+  top: 25%;
+  font-size: 30px;
+  color: rgb(255, 148, 134);
+  animation: spin 8s linear infinite;
+}
+
+.effect-5 {
+  right: 10%;
+  top: 15%;
+  font-size: 30px;
+  color: rgb(226, 98, 238);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes topBounce {
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(25px);
+  }
+}
+
+@keyframes leftBounce {
+  0%, 100%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(25px);
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* section title container */
+.section-title {
+  padding: 0 15px;
+  /* the same as using flex-basis which specifies the length of a flexible item */
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* properties of title like font size, color, etc */
+.section-title h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  margin: 0;
+}
+
+/* put the data-heading content before the title  and set properties for the content*/
+.section-title h2::before {
+  content: attr(data-heading);
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--skin-color-3);
+}
+
+/* to hide the sections which have this class */
+.section-hide {
+  display: none;
+}
+
+/**************** header Section **************/
+/* header content is always at the top of the screen which has a logo ans menu button */
+.header {
+  padding: 20px 15px;
+  /* position absolute taking as reference the screen */
+  position: absolute;
+  width: 100%;
+  /* put it at the top and take the whole width*/
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+/* header logo which is my initials */
+.header .logo a {
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--skin-color-3);
+  color: var(--skin-color-3);
+  font-weight: 600;
+}
+
+/*  */
+.header .hamburger-btn {
+  height: 40px;
+  width: 40px;
+  /* use flex to put icon menu in center of the button container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* effect that the button is over the screen */
+  box-shadow: var(--outer-shadow);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* effect that the button is one with the screen */
+.header .hamburger-btn:hover {
+  box-shadow: var(--outer-shadow-0);
+}
+
+/* menu icon properties */
+.header .hamburger-btn span{
+  display: block;
+  cursor: pointer;
+}
+
+/* use this to make the inner shadow effect */
+.header .hamburger-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.header .hamburger-btn:hover::after {
+  box-shadow: var(--inner-shadow);
+}
+
+/*************** NAV MENU ****************/
+
+/* nav menu container */
+.nav-menu {
+  /* make sure the menu screen stays at the same position always even if the window scrolls, btw there is a class to cancel scrolling when displaying menu */
+  position: fixed;
+  background-color: var(--bg-black-50);
+  padding: 0 15px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* hide the screen and put it in the background until it is activate */
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transition: all 0.3s ease-in;
+}
+
+/* activate/open menu screen by changing some properties */
+.nav-menu.open {
+  z-index: 1100;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* close menu button */
+.nav-menu .close-nav-menu {
+  height: 40px;
+  width: 40px;
+  display: block;
+  font-size: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--text-black-600);
+  transition: all 0.3s ease;
+}
+/* add border radios in after to keep the previous one */
+.nav-menu .close-nav-menu::after {
+  border-radius: 50%;
+}
+
+/* nav menu container, this contains only the menu items */
+.nav-menu-inner {
+  /* make items flexible and align them to the center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* add padding to ul (previously all ul were set to have a padding of 0 */
+.nav-menu ul {
+  padding: 15px;
+}
+
+/* make li items blocks and provide a margin to separate them, aligning text at center */
+.nav-menu ul li {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* the last li item must have 0 margin at bottom */
+.nav-menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* set properties of menu item text */
+.nav-menu ul li a{
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  padding: 5px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+/* add an active class to represent in which part the viewer is by changin the color */
+.nav-menu ul li a.active {
+  color: var(--skin-color-3);
+}
+
+/* add a border radios after hover of a text item*/
+.nav-menu ul li a:hover::after{
+  border-radius: 30px;
+}
+
+/*************** Home Section *****************/
+
+/* home section add relative position to put effects taking this element as reference */
+.home-section {
+  position: relative;
+}
+
+/* properties of home screen */
+.home-section .full-screen {
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+/* make text and img content share the screen by the same amount of size as flexible items */
+.home-section .home-text, .home-section .home-img {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+/* set p text properties */
+.home-section .home-text p {
+  color: var(--text-black-300);
+  font-size: 18px;
+  margin: 0;
+}
+
+/* set h2 text properties */
+.home-section .home-text h2 {
+  font-size: 55px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  margin: 0;
+}
+
+/* set h1 text properties */
+.home-section .home-text h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-black-700);
+  margin: 0;
+}
+
+/* provide a top margin to separate button from text */
+.home-section .home-text .btn-1 {
+  margin-top: 30px;
+}
+
+/* give a style to img container box */
+.home-section .home-img .img-box {
+  max-width: 450px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/* img properties */
+.home-section .home-img .img-box img {
+  width: 100%;
+  border-radius: 50%;
+  /* make the photo circular*/
+  border: 10px solid transparent;
+}
+
+/*************** ABOUT ME SECTION ****************/
+
+/* set about section container */
+.about-section {
+  padding: 80px 0 0;
+  min-height: 100vh;
+}
+
+/* give to the img the 40% of the width */
+.about-section .about-img {
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding: 0 15px;
+}
+
+/* create a square img box (similar to the one use at home)*/
+.about-section .about-img .img-box {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* set img properties */
+.about-section .about-img .img-box img {
+  width: 100%;
+  border: 10px solid transparent;
+  border-radius: 5px;
+}
+
+/* give to social links a margin to separate them from the img and put it at center */
+.about-section .about-img .social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* set social links properties */
+.about-section .about-img .social-links a {
+  /* use inline block to put one next to the other */
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--text-black-600);
+  margin: 0 4px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* interligning of social links a element */
+.about-section .about-img .social-links a {
+  line-height: 40px;
+}
+
+/* change the color when hover */
+.about-section .about-img .social-links a:hover {
+  color: var(--skin-color-3);
+}
+
+/* after element of a has the same radius border */
+.about-section .about-img .social-links a::after {
+  border-radius: 50%;
+}
+
+/* info has 60% of the screen width */
+.about-section .about-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding: 0 15px;
+}
+
+/* set info p properties */
+.about-section .about-info p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  color: var(--text-black-600);
+}
+
+/* font fos span element */
+.about-section .about-info span {
+  font-weight: 600;
+}
+
+/* add a margin to buttons in info, top 30px rigth 20px*/
+.about-section .about-info .btn-1 {
+  margin: 30px 20px 0 0;
+}
+
+/* tabs section uses the whole width */
+.about-section .about-tabs {
+  padding: 60px 15px 50px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* set tab items properties */
+.about-section .about-tabs .tab-item {
+  /* put one next to other */
+  display: inline-block;
+  margin: 0 5px 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: var(--text-black-600);
+  font-weight: 500;
+}
+
+/* when hover add opacity to text if the tab item does not have active class */
+.about-section .about-tabs .tab-item:hover:not(.active) {
+  opacity: 0.6;
+}
+
+/* active item has a different color */
+.about-section .about-tabs .tab-item.active {
+  color: var(--skin-color-3);
+}
+
+/* tab content uses the whole width and add display none to only be able to show the content with active class */
+.about-section .tab-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: none;
+}
+
+/* when tab content active display block */
+.about-section .tab-content.active {
+  display: block;
+  animation: fadeInTop 0.5s ease;
+}
+
+/* add padding to skills class use for soft skills, software and hardware */
+.about-section .skills {
+  padding: 0 0 40px;
+}
+
+/* set skills images heigh and width*/
+.skills-images {
+  height: 48px;
+  width: 48px;
+}
+
+/* skills item uses the 50% width of the window */
+.about-section .skills .skill-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+  margin: 20px 0;
+}
+
+/* set properties for p element and at a relative position to put span element in a specific position */
+.about-section .skills .skill-item p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  margin: 0 10px 10px 15px;
+  position: relative;
+}
+
+/* display span next to img to avoid been too close */
+.about-section .skills .skill-item p span {
+  top: 12px;
+  left: 50px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+/* arduino has a different with so the left space is increased*/
+#arduino {
+  left: 65px;
+}
+
+/* progress is the container of the bar (the gray-clack one */
+.about-section .skills .skill-item .progress {
+  height: 20px;
+  border-radius: 10px;
+  /* position relative to move the line inside using this as reference */
+  position: relative;
+}
+
+/* put the bar in the center (use absolute, top and left for this) as well as setting its properties */
+.about-section .skills .skill-item .progress-bar {
+  background-color: var(--text-black-600);
+  height: 6px;
+  left: 7px;
+  top: 7px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/* put the percentage at bottom (use absolute, top and left for this) and set its properties */
+.about-section .skills .skill-item .progress-bar span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-black-600);
+  margin-top: 20px;
+}
+
+/* give to experience, education and acknoledges a padding bottom  */
+.about-section .experience, .about-section .education, .about-section .acknowledges {
+  padding-bottom: 80px;
+}
+
+/* timeline element uses the whole width */
+.about-section .timeline {
+  flex: 0 0 100%;
+  max-width: 100%;
+  /* position relative to move the items using at reference this element/class */
+  position: relative;
+}
+
+/* put a line at the center of the screen */
+.about-section .timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  background-color: var(--bg-black-100);
+  
+}
+
+/* timeline item uses all width */
+.about-section .timeline .timeline-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+/* odd timeline items properties */
+.about-section .timeline .timeline-item:nth-child(odd) {
+  /* add padding right to create the illusion that the item is at the left and add 50px to let a space between center line*/
+  padding-right: calc(50% + 50px);
+  text-align: right;
+}
+
+/* even timeline items properties */
+.about-section .timeline .timeline-item:nth-child(even) {
+  /* add padding left to create the illusion that the item is at the right and add 50px to let a space between center line*/
+  padding-left: calc(50% + 50px);
+}
+
+/* item inner properties, here the timeline content will be */
+.about-section .timeline .timeline-item-inner {
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* put a line in the space between inner item and the line */
+.about-section .timeline .timeline-item-inner::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: var(--bg-black-100);
+  top: 37px;
+  z-index: -1;
+}
+
+/* direction if it is an odd element */
+.about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner::before {
+  right: -30px;
+}
+
+/* direction if it is an even element */
+.about-section .timeline .timeline-item:nth-child(even) .timeline-item-inner::before {
+  left: -30px;
+}
+
+/* set icon properties */
+.about-section .timeline .timeline-item-inner .icon {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 18px;
+  border: 2px solid var(--bg-black-100);
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--skin-color-3);
+  background-color: var(--bg-black-50);
+}
+
+/* direction to put odd icon at center */
+.about-section .timeline .timeline-item:nth-child(odd) .icon {
+  right: -70px;
+}
+
+/* direction to put even icon at center */
+.about-section .timeline .timeline-item:nth-child(even) .icon {
+  left: -70px;
+}
+
+/* span properties (date) */
+.about-section .timeline .timeline-item-inner span {
+  font-weight: 500;
+  color: var(--skin-color-3);
+  display: block;
+  margin: 0 0 10px;
+}
+
+/* h3 properties (position of the job)*/
+.about-section .timeline .timeline-item-inner h3 {
+  font-size: 20px;
+  color: var(--text-black-700);
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+/* company/where/event h4 properties */
+.about-section .timeline .timeline-item-inner h4 {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-black-600);
+  margin: 0;
+}
+
+/* description of position job p properties */
+.about-section .timeline .timeline-item-inner p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 16px;
+  margin: 15px 0 0;
+}
+
+/******** interest section *********/
+
+/* set interest section container properties */
+.interest-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+/* put three items at the same row */
+.interest-section .interest-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* set item inner container properties */
+.interest-section .interest-item-inner {
+  padding: 50px 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+/* icon properties */
+.interest-section .interest-item-inner .icon {
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto 30px;
+  position: relative;
+  display: flex;
+}
+
+/* align ime to center of icon container, use flex to make the img use 60% of width and center it */
+.interest-section .interest-item-inner .icon img {
+  flex: 0 0 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* make the effect for hover */
+.interest-section .interest-item-inner .icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.interest-section .interest-item-inner:hover .icon {
+  box-shadow: var(--inner-shadow-0);
+}
+
+.interest-section .interest-item-inner:hover .icon::after {
+  box-shadow: var(--outer-shadow);
+}
+
+/* h3 properties */
+.interest-section .interest-item-inner h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 0 0 10px;
+}
+
+/* p properties, text could be desplay under h3 */
+.interest-section .interest-item-inner p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  margin: 0;
+  line-height: 26px;
+}
+
+/************* Portfolio section ************/
+
+/* portfolio section container */
+.portfolio-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+/* margin to separate title from portfolio filter */
+.portfolio-section .section-title {
+  margin-bottom: 40px;
+}
+
+/* set portfolio filter container properties */
+.portfolio-section .portfolio-filter {
+  padding: 0 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* set filter item properties */
+.portfolio-section .filter-item {
+  /* desplay one next to other */
+  display: inline-block;
+  margin: 0 5px 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-black-600);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* when hover filter item which is not the active change opacity */
+.portfolio-section .filter-item:hover:not(.active) {
+  opacity: 0.6;
+}
+
+/* id filter item is active change its color */
+.portfolio-section .filter-item.active {
+  color: var(--skin-color-3);
+}
+
+/* make portfolio item use 33% of the whole width to have three items in a row */
+.portfolio-section .portfolio-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* class use to hide portfolio item, use when filtering  */
+.portfolio-section .portfolio-item.hide {
+  display: none;
+}
+
+/* class to show portfolio items with and effect when filtering */
+.portfolio-section .portfolio-item.show {
+  display: flex;
+  animation: fadeInTop 0.5s ease;
+}
+
+/* portfolio item inner properties */
+.portfolio-section .portfolio-item-inner {
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* img properties */
+.portfolio-section .portfolio-item-img img {
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* when hover push the img a little to the top */
+.portfolio-section .portfolio-item-inner:hover .portfolio-item-img img {
+  transform: translateY(-25px);
+}
+
+/* position relative to put the 'view project' under img */
+.portfolio-section .portfolio-item-img {
+  position: relative;
+}
+
+/* set properties to view project and put it hide in the img*/
+.portfolio-section .portfolio-item-img .view-project {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--skin-color-3);
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transform: translateY(-5px);
+  z-index: -1;
+  opacity: 0;
+}
+
+/* show view project text when hover*/
+.portfolio-section .portfolio-item-inner:hover .view-project {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* hide portfolio item details, project details are used to take the info and display it in popup class*/
+.portfolio-section .portfolio-item-details {
+  display: none;
+}
+
+/* title of project properties */
+.portfolio-section .portfolio-item-inner p {
+  font-size: 16px;
+  margin: 10px 0 0;
+  color: var(--text-black-600);
+}
+
+
+/*************** Portfolio popup ************/
+/* set portfolio popup container properties */
+.portfolio-popup {
+  background-color: var(--bg-black-50);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  /* hide this container*/
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* class to open popup */
+.portfolio-popup.open {
+  z-index: 1200;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* to close/hide popup */
+.portfolio-popup.hide-close {
+  z-index: -1000;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* a screen which desplays when loading the next img */
+.portfolio-popup .pp-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1005;
+  background-color: var(--bg-opacity);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* hide this screen */
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* class to show loader screen */
+.portfolio-popup .pp-loader.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* create like a circle and spin it during 2s (in js it will last as long as the img onload */
+.portfolio-popup .pp-loader div {
+  height: 40px;
+  width: 40px;
+  border: 3px solid var(--skin-color-3);
+  border-radius: 50%;
+  border-right: 3px solid transparent;
+  animation: spin 2s linear infinite;
+}
+
+/* set popup details container properties */
+.portfolio-popup .pp-details {
+  max-width: 100%;
+  width: 85%;
+  margin: auto;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* class to show the pp details */
+.portfolio-popup .pp-details.active {
+  opacity: 1;
+  max-height: 100%;
+}
+
+/* padding for pp details inner (this contains tdescription and info) */
+.portfolio-popup .pp-details-inner {
+  padding: 30px 0;
+}
+
+/* title padding container */
+.portfolio-popup .pp-title {
+  padding: 0 15px;
+}
+
+/* h2 properties */
+.portfolio-popup .pp-title h2 {
+  font-size: 28px;
+  color: var(--text-black-900);
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+/* p properties (this is category) */
+.portfolio-popup .pp-title p {
+  font-size: 14px;
+  color: var(--text-black-600);
+  font-weight: 600;
+  margin: 0 0 15px;
+  border-bottom: 1px solid var(--bg-black-100);
+  padding-bottom: 10px;
+}
+
+/* span font*/
+.portfolio-popup .pp-title p span {
+  font-weight: 400;
+}
+
+/* set project brief properties */
+.portfolio-popup .pp-project-details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 0 0 15px;
+}
+
+/* project brief text properties */
+.portfolio-popup .pp-project-details p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+  margin: 0;
+}
+
+/* description container properties */
+.portfolio-popup .description {
+  /* width space 65% */
+  flex: 0 0 65%;
+  max-width: 65%;
+  padding: 0 15px;
+}
+
+/* info container properties */
+.portfolio-popup .info {
+  /* width space of 35% */
+  flex: 0 0 35%;
+  max-width: 35%;
+  padding: 0 15px;
+}
+
+/* properties of info li item */
+.portfolio-popup .info ul li {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-black-600);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* font of info li-span item */
+.portfolio-popup .info ul li span {
+  font-weight: 400;
+}
+
+/* remove margin bottom of last li item */
+.portfolio-popup .info ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* line to separate content */
+.portfolio-popup .separator {
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: var(--bg-black-100);
+}
+
+/* popup img/video properties */
+.portfolio-popup .pp-img, .portfolio-popup .pp-video {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* when having a video use cursor as pointer, pause and play it clicking the video item */
+.portfolio-popup .pp-video {
+  cursor: pointer;
+}
+
+/* to hide video or img it depends on the source */
+.hide-img-video {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+/* show video or img it depends on the source */
+.show-img-video {
+  display: block;
+}
+
+/* pp main container properties */
+.portfolio-popup .pp-main {
+  min-height: 100vh;
+  max-width: 100%;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* pp main inner container properties */
+.portfolio-popup .pp-main-inner {
+  padding: 70px 0 50px;
+  /* position relative to move the content using the container as reference*/
+  position: relative;
+}
+
+/* button to display project details */
+.portfolio-popup .pp-project-details-btn {
+  /* put it above img/video */
+  position: absolute;
+  left: 0;
+  top: 15px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--skin-color-3);
+  cursor: pointer;
+  padding: 0 15px;
+  transition: all 0.3s ease;
+}
+
+/* provide a margin to plus/minus icon to separate from text */
+.portfolio-popup .pp-project-details-btn i {
+  margin-left: 4px;
+}
+
+/* border radios for button after pressing */
+.portfolio-popup .pp-project-details-btn::after {
+  border-radius: 30px;
+}
+
+/* close button properties */
+.portfolio-popup .pp-close {
+  /* put it at right top */
+  position: absolute;
+  right: 0;
+  top: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  font-size: 35px;
+  color: var(--text-black-600);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* border radios for button after pressing */
+.portfolio-popup .pp-close::after {
+  border-radius: 50%;
+}
+
+/* counter properties */
+.portfolio-popup .pp-counter {
+  /* put it at right bottom */ 
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: var(--text-black-600);
+}
+
+/* prev next button properties */
+.portfolio-popup .pp-prev, .portfolio-popup .pp-next {
+  /* even if scroll the buttons stay at the same place */
+  position: fixed;
+  /* put both at 50% of height*/
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1010;
+  color: var(--text-black-900);
+  transition: all 0.3s ease;
+  /* make it look like grey*/
+  opacity: 0.5;
+}
+
+/* when hover change opacity to make it look black*/
+.portfolio-popup .pp-prev:hover, .portfolio-popup .pp-next:hover {
+  opacity: 1;
+}
+
+/* line height (interlining) for icon prev and next */
+.portfolio-popup .pp-prev i, .portfolio-popup .pp-next i {
+  line-height: 40px;
+}
+
+/* rotate prev to point to the left */
+.portfolio-popup .pp-prev i {
+  transform: rotate(180deg);
+}
+
+/* put prev at the left */
+.portfolio-popup .pp-prev {
+  left: 15px;
+}
+
+/* put nect at the right */
+.portfolio-popup .pp-next {
+  right: 15px;
+}
+
+/*************** Contact section *******************/
+
+/* contact section properties */
+.contact-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+/* contact items next to each other */
+.contact-section .contact-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  display: flex;
+}
+
+/* contact item inner container properties */
+.contact-section .contact-item-inner {
+  width: 100%;
+  padding: 30px 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* icon properties */
+.contact-section .contact-item-inner i {
+  font-size: 25px;
+  color: var(--skin-color-3);
+}
+
+/* span properties */
+.contact-section .contact-item-inner span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 15px 0 10px;
+}
+
+/* contact p properties */
+.contact-section .contact-item-inner p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+  margin: 0;
+  /* use to break a long word */
+  word-break: break-word;
+}
+
+/* contact form container properties */
+.contact-section .contact-form {
+  margin-top: 50px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* width 50 container */
+.contact-section .contact-form .w50 {
+  padding: 0 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* input container properties */
+.contact-section .contact-form .input-group {
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+
+/* border radius of 30px in after object for the effect of sink */
+.contact-section .contact-form .input-group::after {
+  border-radius: 30px;
+}
+
+/* input properties */
+.contact-section .contact-form .input-group .input-control {
+  height: 45px;
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  /* to delete white color of inputs*/
+  background-color: transparent;
+  font-size: 16px;
+  padding: 0 15px;
+  color: var(--text-black-700);
+}
+
+/* textarea properties */
+.contact-section .contact-form .input-group textarea.input-control {
+  height: 184px;
+  padding: 15px;
+  resize: none;
+}
+
+/* submit button properties */
+.contact-section .contact-form .submit-btn {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: right;
+  padding-right: 15px;
+}
