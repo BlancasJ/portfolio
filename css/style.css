@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 
 /* global style */
 /* define custom css variables */
@@ -21,11 +21,11 @@
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset 0 0 0 #f8f8f8;
   --inner-shadow-0: inset 0 0 0 #d0d0d0, inset -3px -3px 3px #f8f8f8;
   /* colors to used in portfolio*/
-  --skin-color-1:#fb839e;
-  --skin-color-2:#ec9412;
-  --skin-color-3:#1fc586;
-  --skin-color-4:#2eb1ed;
-  --skin-color-5:#cc3a3b;
+  --skin-color-1: #fb839e;
+  --skin-color-2: #ec9412;
+  --skin-color-3: #1fc586;
+  --skin-color-4: #2eb1ed;
+  --skin-color-5: #cc3a3b;
 }
 
 /* define some body variables */
@@ -45,7 +45,7 @@ body.hide-scrolling {
 
 /*Add font family to all elements except i*/
 *:not(i) {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   /* define how thin or thick characters will be 400 is normal*/
   font-weight: 400;
 }
@@ -60,7 +60,8 @@ body.hide-scrolling {
 }
 
 /* after selector inserts something after content, before selector insert something before content*/
-::before, ::after {
+::before,
+::after {
   /* padding and border are part of height and width*/
   box-sizing: border-box;
 }
@@ -128,7 +129,7 @@ img {
 
 /* use after to create an empty content which uses the same space as the original one but is in a different index to have to effects at the same time the outer 0 and inner  */
 .hover-in-shadow::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -147,7 +148,7 @@ img {
 .btn-1 {
   padding: 10px 15px;
   font-size: 16px;
-  font-weight: 500;;
+  font-weight: 500;
   color: var(--skin-color-3);
   line-height: 1.6;
   cursor: pointer;
@@ -212,28 +213,30 @@ img {
 }
 
 @keyframes spin {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
 
 @keyframes topBounce {
-  0%, 100%{
+  0%,
+  100% {
     transform: translateY(0);
   }
-  50%{
+  50% {
     transform: translateY(25px);
   }
 }
 
 @keyframes leftBounce {
-  0%, 100%{
+  0%,
+  100% {
     transform: translateX(0);
   }
-  50%{
+  50% {
     transform: translateX(25px);
   }
 }
@@ -331,14 +334,14 @@ img {
 }
 
 /* menu icon properties */
-.header .hamburger-btn span{
+.header .hamburger-btn span {
   display: block;
   cursor: pointer;
 }
 
 /* use this to make the inner shadow effect */
 .header .hamburger-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -427,7 +430,7 @@ img {
 }
 
 /* set properties of menu item text */
-.nav-menu ul li a{
+.nav-menu ul li a {
   display: inline-block;
   font-size: 28px;
   font-weight: 600;
@@ -443,7 +446,7 @@ img {
 }
 
 /* add a border radios after hover of a text item*/
-.nav-menu ul li a:hover::after{
+.nav-menu ul li a:hover::after {
   border-radius: 30px;
 }
 
@@ -461,7 +464,8 @@ img {
 }
 
 /* make text and img content share the screen by the same amount of size as flexible items */
-.home-section .home-text, .home-section .home-img {
+.home-section .home-text,
+.home-section .home-img {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 0 15px;
@@ -715,7 +719,9 @@ img {
 }
 
 /* give to experience, education and acknoledges a padding bottom  */
-.about-section .experience, .about-section .education, .about-section .acknowledges {
+.about-section .experience,
+.about-section .education,
+.about-section .acknowledges {
   padding-bottom: 80px;
 }
 
@@ -729,14 +735,13 @@ img {
 
 /* put a line at the center of the screen */
 .about-section .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 100%;
   left: 50%;
   top: 0;
   background-color: var(--bg-black-100);
-  
 }
 
 /* timeline item uses all width */
@@ -768,7 +773,7 @@ img {
 
 /* put a line in the space between inner item and the line */
 .about-section .timeline .timeline-item-inner::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 1px;
@@ -778,12 +783,18 @@ img {
 }
 
 /* direction if it is an odd element */
-.about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner::before {
+.about-section
+  .timeline
+  .timeline-item:nth-child(odd)
+  .timeline-item-inner::before {
   right: -30px;
 }
 
 /* direction if it is an even element */
-.about-section .timeline .timeline-item:nth-child(even) .timeline-item-inner::before {
+.about-section
+  .timeline
+  .timeline-item:nth-child(even)
+  .timeline-item-inner::before {
   left: -30px;
 }
 
@@ -892,7 +903,7 @@ img {
 
 /* make the effect for hover */
 .interest-section .interest-item-inner .icon::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1048,7 +1059,6 @@ img {
   margin: 10px 0 0;
   color: var(--text-black-600);
 }
-
 
 /*************** Portfolio popup ************/
 /* set portfolio popup container properties */
@@ -1225,7 +1235,8 @@ img {
 }
 
 /* popup img/video properties */
-.portfolio-popup .pp-img, .portfolio-popup .pp-video {
+.portfolio-popup .pp-img,
+.portfolio-popup .pp-video {
   max-width: 100%;
   width: auto;
   height: auto;
@@ -1321,7 +1332,7 @@ img {
 
 /* counter properties */
 .portfolio-popup .pp-counter {
-  /* put it at right bottom */ 
+  /* put it at right bottom */
   position: absolute;
   right: 0;
   bottom: 5px;
@@ -1332,7 +1343,8 @@ img {
 }
 
 /* prev next button properties */
-.portfolio-popup .pp-prev, .portfolio-popup .pp-next {
+.portfolio-popup .pp-prev,
+.portfolio-popup .pp-next {
   /* even if scroll the buttons stay at the same place */
   position: fixed;
   /* put both at 50% of height*/
@@ -1350,12 +1362,14 @@ img {
 }
 
 /* when hover change opacity to make it look black*/
-.portfolio-popup .pp-prev:hover, .portfolio-popup .pp-next:hover {
+.portfolio-popup .pp-prev:hover,
+.portfolio-popup .pp-next:hover {
   opacity: 1;
 }
 
 /* line height (interlining) for icon prev and next */
-.portfolio-popup .pp-prev i, .portfolio-popup .pp-next i {
+.portfolio-popup .pp-prev i,
+.portfolio-popup .pp-next i {
   line-height: 40px;
 }
 
@@ -1421,6 +1435,12 @@ img {
   margin: 0;
   /* use to break a long word */
   word-break: break-word;
+  text-decoration: none;
+}
+/**/
+#mailToMe {
+  text-decoration: none;
+  color: var(--text-black-600);
 }
 
 /* contact form container properties */
