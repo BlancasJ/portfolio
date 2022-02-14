@@ -1,1192 +1,1896 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/portfolio.png">
-  <!-- main css -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- Responsive css -->
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
-
-</head>
-<body>
-
-  <!--header start-->
-  <header class="header">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="logo">
-          <a href="index.html">JB</a>
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/ios-filled/50/000000/portfolio.png"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Responsive css -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  </head>
+  <body>
+    <!--header start-->
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="logo">
+            <a href="index.html">JB</a>
+          </div>
+          <div class="hamburger-btn" data-target=".show">
+            <span><i class="fas fa-bars"></i></span>
+          </div>
         </div>
-        <div class="hamburger-btn" data-target=".show">
-          <span><i class="fas fa-bars"></i></span>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!--nav menu start-->
+    <nav class="nav-menu">
+      <div
+        class="close-nav-menu outer-shadow hover-in-shadow"
+        data-target=".hide"
+      >
+        &times;
+      </div>
+      <div class="nav-menu-inner">
+        <ul>
+          <li>
+            <a href="#home" class="link-item inner-shadow active">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="link-item outer-shadow hover-in-shadow"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#interests" class="link-item outer-shadow hover-in-shadow"
+              >Interests</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="link-item outer-shadow hover-in-shadow"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="link-item outer-shadow hover-in-shadow"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--nav menu end-->
+
+    <!--home section strat-->
+    <section class="home-section section active" id="home">
+      <!-- effect wrap start -->
+      <div class="effect-wrap">
+        <div class="effect effect-1"><i class="fas fa-chess-knight"></i></div>
+        <div class="effect effect-2"><i class="fas fa-chess-rook"></i></div>
+        <div class="effect effect-3"><i class="fas fa-chess-board"></i></div>
+        <div class="effect effect-4"><i class="fas fa-chess-bishop"></i></div>
+        <div class="effect effect-5"><i class="fas fa-chess-king"></i></div>
+      </div>
+      <!-- effect wrap end -->
+      <div class="container">
+        <div class="row full-screen align-itmes-center">
+          <div class="home-text">
+            <p>Howdy</p>
+            <h2>I'm Jorge</h2>
+            <h1>Software Engineer</h1>
+            <a
+              href="#about"
+              class="link-item btn-1 outer-shadow hover-in-shadow"
+              >More About Me</a
+            >
+          </div>
+          <div class="home-img">
+            <div class="img-box inner-shadow">
+              <img
+                src="img/profile.jpg"
+                alt="profile-picture"
+                class="outer-shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--home section end-->
+
+    <!-- About section start -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="Main Info">About me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box inner-shadow">
+              <img
+                src="img/profile.jpg"
+                alt="profile-picture"
+                class="outer-shadow"
+              />
+            </div>
+
+            <!-- social links start -->
+            <div class="social-links">
+              <a
+                href="https://github.com/BlancasJ"
+                target="_blank"
+                class="outer-shadow hover-in-shadow"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="mailto:Jorge.Blancas@theksquaregroup.com"
+                target="_blank"
+                class="outer-shadow hover-in-shadow"
+                ><i class="far fa-envelope"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/jorge-blancas-cruz-4b6b311aa/"
+                target="_blank"
+                class="outer-shadow hover-in-shadow"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <!-- social links end -->
+          </div>
+          <div class="about-info">
+            <p>
+              <span
+                >Hi! I am Jorge Blancas, a Software Engineer at The Ksquare
+                Group.</span
+              >
+              B.Eng. in Computational Embedded Systems, over 2 years of
+              experience developing mini-projects and integrating them to other
+              areas such as computer vision, web development, and automation.
+              Then, became a Software Engineer with 1 year of experience working
+              on projects related to web development. Competent at the use of
+              JavaScript (ReactJS, NodeJS, and ExpressJS). Encouraged to
+              continually grow and to solve the problems that may arise by
+              working collaboratively.
+            </p>
+            <a
+              href="Resume - Jorge Blancas.pdf"
+              target="_blank"
+              class="btn-1 outer-shadow hover-in-shadow"
+              >Download Resume</a
+            >
+            <a
+              href="#contact"
+              class="link-item btn-1 outer-shadow hover-in-shadow"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+
+        <!-- About tabs start-->
+        <div class="row">
+          <div class="about-tabs">
+            <span class="tab-item outer-shadow active" data-target=".soft"
+              >Soft Skills</span
+            >
+            <span class="tab-item" data-target=".programmingLanguages"
+              >Programming Languages</span
+            >
+            <span class="tab-item" data-target=".database">Databases</span>
+            <span class="tab-item" data-target=".frameworks">Frameworks</span>
+            <span class="tab-item" data-target=".technologies">Tools</span>
+            <span class="tab-item" data-target=".platforms">Platforms</span>
+            <span class="tab-item" data-target=".experience">Experience</span>
+            <span class="tab-item" data-target=".education">Education</span>
+            <span class="tab-item" data-target=".acknowledges"
+              >Career Path</span
+            >
+          </div>
+        </div>
+        <!-- About tabs end-->
+
+        <!-- Soft Skills-->
+        <!-- Skills Start -->
+        <div class="row">
+          <div class="skills soft tab-content active">
+            <div class="row">
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/dusk/48/000000/teamwork.png"
+                    title="Teamwork"
+                  /><span>Teamwork</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(80% - 14px)">
+                    <!--<span>80%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/officel/48/000000/trust.png"
+                    title="Trust"
+                  /><span>Trust</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(85% - 14px)">
+                    <!--<span>85%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/plasticine/48/000000/meeting-room.png"
+                    title="Negotiation of conflicts"
+                  /><span>Negotiation of conflicts</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/sherlock-holmes.png"
+                    title="Problem solving"
+                  /><span>Porblem solving</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/fluent/48/000000/creativity.png"
+                    title="Creativity"
+                  /><span>Creativity</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
+                    <!--<span>60%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/office/48/000000/wakeup-hill-on-stairs.png"
+                    title="Proactivity"
+                  /><span>Proactivity</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/office/48/000000/handle-with-care.png"
+                    title="Responsibility"
+                  /><span>Responsability</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(75% - 14px)">
+                    <!--<span>75%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- ///// Metodologies: ///// start ///////////-->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/external-flaticons-flat-flat-icons/48/000000/external-scrum-agile-flaticons-flat-flat-icons-2.png"
+                    title="Scrum"
+                  /><span>Scrum</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
+                    <!--<span>25%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/external-flaticons-flat-flat-icons/48/000000/external-kanban-agile-flaticons-flat-flat-icons.png"
+                    title="Kanban"
+                  /><span>Kanban</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
+                    <!--<span>25%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- ///// Metodologies: ///// end ///////////-->
+            </div>
+          </div>
+        </div>
+        <!-- Skills end -->
+
+        <!-- Software Skills-->
+        <!-- Skills Start -->
+        <div class="row">
+          <div class="skills database tab-content">
+            <div class="row">
+              <!-- ///// Databases management: ///// Start//////////// -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/postgreesql.png"
+                    title="PostgreSQL"
+                  /><span>PostgreSQL</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>70%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/fluent/48/000000/mysql-logo.png"
+                    title="MySQL"
+                  /><span>MySQL</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/mongodb.png"
+                    title="MongoDB"
+                  /><span>MongoDB</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(20% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- ///// Databases management ///// end//////////// -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Start -->
+        <div class="row">
+          <div class="skills programmingLanguages tab-content">
+            <div class="row">
+              <!-- ///// Programming Languages: ///// start ///////////-->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/javascript.png"
+                    title="JavaScript"
+                  /><span>JavaScript</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(70% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/typescript.png"
+                    title="TypeScript"
+                  /><span>TypeScript</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(70% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/dusk/48/000000/python.png"
+                    title="Python"
+                  /><span>Python</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
+                    <!--<span>60%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/dusk/48/000000/c-programming.png"
+                    title="C language"
+                  /><span>C language</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(70% - 14px)">
+                    <!--<span>70%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/external-soft-fill-juicy-fish/48/000000/external-sql-servers-and-networks-soft-fill-soft-fill-juicy-fish.png"
+                    title="SQL"
+                  /><span>SQL</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>70%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/ios/50/000000/php-logo.png"
+                    title="PHP"
+                  /><span>PHP</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(15% - 14px)">
+                    <!--<span>60%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/fluent/48/000000/matlab.png"
+                    title="MATLAB"
+                  /><span>MATLAB</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
+                    <!--<span>60%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- ///// Programming Languages: ///// start ///////////-->
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="skills frameworks tab-content">
+            <div class="row">
+              <!-- ///// Frameworks: ///// start ///////////-->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/office/40/000000/react.png"
+                    title="ReactJS"
+                  /><span>ReactJS</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(30% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/48/000000/external-airplane-airport-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"
+                    title="Flugzeug "
+                  /><span>Flugzeug</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/nodejs.png"
+                    title="NodeJS"
+                  /><span>NodeJS</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(45% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="./img/software/expressjs.svg"
+                    title="expressjs"
+                  /><span></span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(40% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- ///// Frameworks: ///// start ///////////-->
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="skills technologies tab-content">
+            <div class="row">
+              <!-- ///// Technology stack: ///// start ///////////-->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/dusk/48/000000/html-5.png"
+                    title="HTML"
+                  /><span>HTML</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/dusk/48/000000/css3.png"
+                    title="CSS"
+                  /><span>CSS</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/redux.png"
+                    title="ReduxJS"
+                  /><span>ReduxJS</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(20% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="./img/software/materialui.svg"
+                    title="MaterialUI"
+                    style="max-height: 38px"
+                  /><span>MaterialUI</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(20% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/cloud-function.png"
+                    title="Swagger"
+                  /><span>Swagger</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(35% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="./img/software/sequelize.png"
+                    title="Sequelize"
+                    style="max-height: 50px"
+                  /><span>Sequelize</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(65% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/docker.png"
+                    title="Docker"
+                  /><span>Docker</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(30% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/software/opencv.png"
+                    class="skills-images"
+                    title="OpenCV"
+                  /><span>OpenCV</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(30% - 14px)">
+                    <!--<span>30%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/software/latex-icon.png"
+                    class="skills-images"
+                    title="LATEX"
+                  /><span>LATEX</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
+                    <!--<span>60%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- ///// Technology stack: ///// end ///////////-->
+
+              <!-- ///// tools: ///// start ///////////-->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/git.png"
+                    title="Git"
+                  /><span>Git</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(75% - 14px)">
+                    <!--<span>65%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/fluent-systems-filled/48/000000/github.png"
+                    title="GitHub"
+                  /><span>GitHub</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(65% - 14px)">
+                    <!--<span>65%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/fluency/48/000000/console.png"
+                    title="Terminal"
+                  /><span>Terminal</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>65%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- ///// tools: ///// end ///////////-->
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="skills platforms tab-content">
+            <div class="row">
+              <!-- ///// Platforms/Services: ///// start ///////////-->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/nginx.png"
+                    title="Nginx"
+                  /><span>Nginx</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(25% - 14px)">
+                    <!--<span>25%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/fluency/48/000000/azure-1.png"
+                    title="Azure"
+                  /><span>Azure</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(25% - 14px)">
+                    <!--<span>25%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/amazon-web-services.png"
+                    title="Amazon Web Services"
+                  /><span>Amazon Web Services</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(25% - 14px)">
+                    <!--<span>25%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/linux.png"
+                    title="Linux"
+                  /><span>Linux</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/windows-logo.png"
+                    title="Windows"
+                  /><span>Windows</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+            </div>
+          </div>
+        </div>
+        <!-- Skills end -->
+
+        <!-- Hardware Skills-->
+        <!-- Skills Start -->
+        <div class="row">
+          <div class="skills hardware tab-content">
+            <div class="row">
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/hardware/plc.png"
+                    title="Programmable Logic Controller: SIEMENS & Allen-Bradley"
+                    class="skills-images"
+                  /><span>PLC</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(70% - 14px)">
+                    <!--<span>70%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/hardware/chip.png"
+                    title="MICROCHIP PIC 16F & 18F"
+                    class="skills-images"
+                  /><span>MICROCHIP PIC</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(80% - 14px)">
+                    <!--<span>80%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/dusk/48/000000/motherboard.png"
+                    title="Intel Edison"
+                  /><span>Intel Edison</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/hardware/arduino.png"
+                    title="Arduino"
+                    class="skills-images"
+                    style="width: 70px"
+                  /><span id="arduino">Arduino</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(70% - 14px)">
+                    <!--<span>70%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/raspberry-pi.png"
+                    title="Raspberry"
+                  /><span>Raspberry</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(40% - 14px)">
+                    <!--<span>40%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/cute-clipart/48/000000/motherboard.png"
+                    title="STM32"
+                  /><span>STM32</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(25% - 14px)">
+                    <!--<span>25%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/officel/48/000000/motherboard.png"
+                    title="ESP32"
+                  /><span>ESP32</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
+                    <!--<span>60%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="https://img.icons8.com/plasticine/48/000000/memory-slot.png"
+                    title="PSoC"
+                  /><span>PSoC</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <!--<span>50%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/hardware/power.png"
+                    title="Power Supply"
+                    class="skills-images"
+                  /><span>Power Supply</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(95% - 14px)">
+                    <!--<span>95%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/hardware/oscilloscope.png"
+                    title="Oscilloscope"
+                    class="skills-images"
+                  /><span>Oscilloscope</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(80% - 14px)">
+                    <!--<span>80%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/hardware/tester.png"
+                    title="Tester"
+                    class="skills-images"
+                  /><span>Tester</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(95% - 14px)">
+                    <!--<span>95%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/hardware/waveform-generator.png"
+                    title="Function waveform generator"
+                    class="skills-images"
+                  /><span>Waveform Generator</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(70% - 14px)">
+                    <!--<span>70%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+
+              <!-- Skill item start -->
+              <div class="skill-item">
+                <p>
+                  <img
+                    src="img/hardware/soldering-iron.png"
+                    class="skills-images"
+                    title="Soldering iron"
+                  /><span>Soldering Iron</span>
+                </p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width: calc(75% - 14px)">
+                    <!--<span>75%</span>-->
+                  </div>
+                </div>
+              </div>
+              <!-- Skill item end -->
+            </div>
+          </div>
+        </div>
+        <!-- Skills end -->
+
+        <!-- experience start -->
+        <div class="row">
+          <div class="experience tab-content">
+            <div class="row">
+              <div class="timeline">
+                <div class="row">
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-briefcase icon"></i>
+                      <span>August 2021 – Now</span>
+                      <h3>Software Engineer</h3>
+                      <h4>The Ksquare Group</h4>
+                      <p>
+                        Development of an "Employee Portal" with role-based
+                        permissions (HR, Manager, Employee) and modules for
+                        dynamic benefits knowledge base, management of benefits
+                        packages, timesheet submission and approvals and PTO
+                        management.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-briefcase icon"></i>
+                      <span>February 2021 – August 2021</span>
+                      <h3>JavaScript Associate Software Engineer</h3>
+                      <h4>Ksquare University</h4>
+                      <p>
+                        High-performance program focused on reinforcing
+                        programming skills with JavaScript specialty, soft
+                        skills and business strategies for development.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-briefcase icon"></i>
+                      <span>January 2020 – April 2020</span>
+                      <h3>PLC Programmer and Embedded Systems Developer</h3>
+                      <h4>Vazlo S.A. de C.V</h4>
+                      <p>
+                        Development of a user-friendly real-time system for
+                        object counting using computer vision as the core and
+                        ladder diagram to transform it in an industrial process.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-briefcase icon"></i>
+                      <span>April 2019</span>
+                      <h3>PLC Programmer and Web Developer</h3>
+                      <h4>Universidad Polit&eacute;cnica de Yucat&aacute;n</h4>
+                      <p>
+                        Automate school equipment and visualize its data
+                        remotely. The equipment consisted of one linear robot
+                        which takes objects and put them on a conveyor belt
+                        which can check whether the object is metal or plastic
+                        and at the same time, count them.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-briefcase icon"></i>
+                      <span>August 2018 – September 2018</span>
+                      <h3>Intern</h3>
+                      <h4>Universidad Polit&eacute;cnica de Yucat&aacute;n</h4>
+                      <p>
+                        First internship developing an autonomous orchard using
+                        equipment and material given by the university.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- experience end -->
+
+        <!-- education start -->
+        <div class="row">
+          <div class="education tab-content">
+            <div class="row">
+              <div class="timeline">
+                <div class="row">
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-graduation-cap icon"></i>
+                      <span>2016 - 2020</span>
+                      <h3>Computational Embedded Systems Engineering</h3>
+                      <h4>Universidad Polit&eacute;cnica de Yucat&aacute;n</h4>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- education end -->
+
+        <!-- acknowledges start -->
+        <div class="row">
+          <div class="acknowledges tab-content">
+            <div class="row">
+              <div class="timeline">
+                <div class="row">
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>December 2019</span>
+                      <h3>iTEP</h3>
+                      <p>Upper Intermediate - CERF B2</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>November 2019</span>
+                      <h3>"Internet de las cosas"</h3>
+                      <p>Workshop speaker</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>November 2019</span>
+                      <h3>"CC Compiler"</h3>
+                      <p>Workshop speaker</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>September 2019</span>
+                      <h3>Innovating MID</h3>
+                      <p>Become a member</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>March 2019</span>
+                      <h3>HackSureste</h3>
+                      <p>Competitor</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>December 2018</span>
+                      <h3>WAFR 13th</h3>
+                      <p>Staff</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>June 2018</span>
+                      <h3>COMIA 10th</h3>
+                      <p>Staff</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>May 2018</span>
+                      <h3>"Introduction to Research" - ELCIR</h3>
+                      <p>Participant</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>April 2018</span>
+                      <h3>Talent Land</h3>
+                      <p>Participant</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>February 2018</span>
+                      <h3>Invent For The Planet</h3>
+                      <p>Competitor</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>August 2017</span>
+                      <h3>"Android School with a Kotlin's pinch"</h3>
+                      <p>Participant</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>April 2017</span>
+                      <h3>UPY Programming Club</h3>
+                      <p>Founder</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+
+                  <!-- timeline item start-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-shield-alt icon"></i>
+                      <span>December 2016</span>
+                      <h3>"Primer Encuentro de Cómputo Científico"</h3>
+                      <p>Participant</p>
+                    </div>
+                  </div>
+                  <!-- timeline item end-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- acknowledges end -->
+      </div>
+    </section>
+    <!-- About section end-->
+
+    <!-- interest section start -->
+    <div class="interest-section section" id="interests">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="Interests">What I like</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- interest item start -->
+          <div class="interest-item">
+            <div class="interest-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <img
+                  src="https://img.icons8.com/fluent/48/000000/cloud-development.png"
+                />
+              </div>
+              <h3>IoT</h3>
+              <!-- can add a p tag to write a description-->
+            </div>
+          </div>
+          <!-- interest item end -->
+
+          <!-- interest item start -->
+          <div class="interest-item">
+            <div class="interest-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <img
+                  src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/48/000000/external-code-software-and-application-xnimrodx-lineal-color-xnimrodx.png"
+                />
+              </div>
+              <h3>Back-end</h3>
+              <!-- can add a p tag to write a description-->
+            </div>
+          </div>
+          <!-- interest item end -->
+
+          <!-- interest item start -->
+          <div class="interest-item">
+            <div class="interest-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <img
+                  src="https://img.icons8.com/dusk/48/000000/robot--v2.png"
+                />
+              </div>
+              <h3>Automation</h3>
+              <!-- can add a p tag to write a description-->
+            </div>
+          </div>
+          <!-- interest item end -->
+
+          <!-- interest item start -->
+          <div class="interest-item">
+            <div class="interest-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <img
+                  src="https://img.icons8.com/officel/48/000000/electronics.png"
+                />
+              </div>
+              <h3>Firmware Development</h3>
+              <!-- can add a p tag to write a description-->
+            </div>
+          </div>
+          <!-- interest item end -->
+
+          <!-- interest item start -->
+          <div class="interest-item">
+            <div class="interest-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <img src="https://img.icons8.com/dusk/48/000000/web.png" />
+              </div>
+              <h3>Front-end</h3>
+              <!-- can add a p tag to write a description-->
+            </div>
+          </div>
+          <!-- interest item end -->
+
+          <!-- interest item start -->
+          <div class="interest-item">
+            <div class="interest-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <img src="https://img.icons8.com/fluent/48/000000/vision.png" />
+              </div>
+              <h3>Computer Vision</h3>
+              <!-- can add a p tag to write a description-->
+            </div>
+          </div>
+          <!-- interest item end -->
         </div>
       </div>
     </div>
-  </header>
-  <!--header end-->
+    <!-- interest section end -->
 
-  <!--nav menu start-->
-  <nav class="nav-menu">
-    <div class="close-nav-menu outer-shadow hover-in-shadow" data-target=".hide">&times;</div>
-    <div class="nav-menu-inner">
-      <ul>
-        <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
-        <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
-        <li><a href="#interests" class="link-item outer-shadow hover-in-shadow">Interests</a></li>
-        <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfolio</a></li>
-        <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!--nav menu end-->
-
-  <!--home section strat-->
-  <section class="home-section section active" id="home">
-    <!-- effect wrap start -->
-    <div class="effect-wrap">
-      <div class="effect effect-1"><i class="fas fa-chess-knight"></i></div>
-      <div class="effect effect-2"><i class="fas fa-chess-rook"></i></div>
-      <div class="effect effect-3"><i class="fas fa-chess-board"></i></div>
-      <div class="effect effect-4"><i class="fas fa-chess-bishop"></i></div>
-      <div class="effect effect-5"><i class="fas fa-chess-king"></i></div>
-    </div>
-    <!-- effect wrap end -->
-    <div class="container">
-      <div class="row full-screen align-itmes-center">
-        <div class="home-text">
-          <p>Howdy</p>
-          <h2>I'm Jorge</h2>
-          <h1>JavaScript Associate Software Engineer</h1>
-          <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
-        </div>
-        <div class="home-img">
-          <div class="img-box inner-shadow">
-            <img src="img/myself.png" alt="profile-picture" class="outer-shadow"/>
+    <!-- Portafolio Section start -->
+    <section class="portfolio-section section" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="Portfolio">Projects</h2>
           </div>
         </div>
+        <!-- portfolio filter start -->
+        <div class="row">
+          <div class="portfolio-filter">
+            <span class="filter-item outer-shadow active" data-target="all"
+              >All</span
+            >
+            <span class="filter-item" data-target="web-application"
+              >Web Application</span
+            >
+            <span class="filter-item" data-target="computer-vision"
+              >Computer Vision</span
+            >
+            <span class="filter-item" data-target="automation">Automation</span>
+            <span class="filter-item" data-target="iot"
+              >Internet of Things</span
+            >
+          </div>
+        </div>
+        <!-- portfolio filter end -->
+
+        <!-- Portfolio items start -->
+        <div class="row portfolio-items">
+          <!-- Portfolio item start 1-->
+          <div class="portfolio-item" data-category="web-application">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img
+                  src="img/projects/portfolio/01.PNG"
+                  alt="portfolio"
+                  data-screenshots="img/projects/portfolio/01.PNG, img/projects/portfolio/02.PNG, img/projects/portfolio/03.PNG, img/projects/portfolio/04.PNG, img/projects/portfolio/05.PNG, img/projects/portfolio/06.PNG"
+                />
+                <!--View project btn-->
+                <span class="view-project">View Project</span>
+              </div>
+              <p class="portfolio-item-title">Personal Portfolio</p>
+              <!-- Portfolio item details start -->
+              <div class="portfolio-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      My personal portfolio which will be used to present myself
+                      to collegues or possible clients.
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project Info:</h3>
+                    <ul>
+                      <li>Date: <span>April 2021</span></li>
+                      <li>Project: <span>Portfolio</span></li>
+                      <li>Tools: <span>JavaScript, CSS, HTML</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item details end -->
+            </div>
+          </div>
+          <!-- Portfolio item end 1-->
+
+          <!-- Portfolio item start 2-->
+          <div class="portfolio-item" data-category="computer-vision">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img
+                  src="img/projects/object-counting/00.PNG"
+                  alt="object-counting"
+                  data-screenshots="img/projects/object-counting/00.PNG, img/projects/object-counting/01.png, img/projects/object-counting/02.png, img/projects/object-counting/03.png, img/projects/object-counting/04.png, img/projects/object-counting/05.png, img/projects/object-counting/06.png, img/projects/object-counting/video.mp4"
+                />
+                <!--View project btn-->
+                <span class="view-project">View Project</span>
+              </div>
+              <p class="portfolio-item-title">
+                Real-Time System For Object Counting
+              </p>
+              <!-- Portfolio item details start -->
+              <div class="portfolio-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      At Vazlo SA de CV company, it is manually corroborated
+                      that products arrive complete, it means, if they order a
+                      batch of five hundred parts, a worker from the quality
+                      control area must count one by one that there are indeed
+                      five hundred parts. To optimize the process two partners
+                      and I had to develop a user-friendly system capable of
+                      counting five thousand different types of parts.
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project Info:</h3>
+                    <ul>
+                      <li>Date: <span>January - April 2020</span></li>
+                      <li>Project: <span>Internship III</span></li>
+                      <li>
+                        Tools: <span>Python, OpenCV, MicroLogix 1400</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item details end -->
+            </div>
+          </div>
+          <!-- Portfolio item end 2-->
+
+          <!-- Portfolio item start 3-->
+          <div class="portfolio-item" data-category="automation">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img
+                  src="img/projects/automation/01.jpeg"
+                  alt="object-counting"
+                  data-screenshots="img/projects/automation/01.jpeg, img/projects/automation/02.jpeg, img/projects/automation/03.jpeg, img/projects/automation/04.jpeg, img/projects/automation/05.jpeg, img/projects/automation/06.jpeg, img/projects/automation/07.jpeg, img/projects/automation/08.jpeg, img/projects/automation/09.jpeg, img/projects/automation/10.jpeg, img/projects/automation/11.jpeg, img/projects/automation/12.jpeg, img/projects/automation/13.jpeg, img/projects/automation/14.jpeg, img/projects/automation/video.mp4"
+                />
+                <!--View project btn-->
+                <span class="view-project">View Project</span>
+              </div>
+              <p class="portfolio-item-title">Automate School Equipment</p>
+              <!-- Portfolio item details start -->
+              <div class="portfolio-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Program different PLCs to complete a process, send data to
+                      a server and build a web app to view the information.
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project Info:</h3>
+                    <ul>
+                      <li>Date: <span>October - December 2019</span></li>
+                      <li>Project: <span>Programmable Automatas</span></li>
+                      <li>Tools: <span>SIEMENS S7-1200, ESP32</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item details end -->
+            </div>
+          </div>
+          <!-- Portfolio item end 3-->
+
+          <!-- Portfolio item start 4-->
+          <div class="portfolio-item" data-category="iot">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img
+                  src="img/projects/smart-room/00.jpeg"
+                  alt="object-counting"
+                  data-screenshots="img/projects/smart-room/00.jpeg, img/projects/smart-room/01.jpeg, img/projects/smart-room/02.jpeg, img/projects/smart-room/03.jpeg, img/projects/smart-room/04.jpeg, img/projects/smart-room/05.jpeg, img/projects/smart-room/06.jpeg, img/projects/smart-room/07.jpeg, img/projects/smart-room/08.jpeg, img/projects/smart-room/09.jpeg, img/projects/smart-room/10.jpeg, img/projects/smart-room/11.jpeg, img/projects/smart-room/12.jpeg"
+                />
+                <!--View project btn-->
+                <span class="view-project">View Project</span>
+              </div>
+              <p class="portfolio-item-title">Smart Room</p>
+              <!-- Portfolio item details start -->
+              <div class="portfolio-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Develop a system to control a room using a smartphone.
+                      Turn on one or more lamps and fans, vary their intensity,
+                      measure the temperature, humidity and alert when there is
+                      an anormal amount of smoke.
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project Info:</h3>
+                    <ul>
+                      <li>Date: <span>October - December 2019</span></li>
+                      <li>Project: <span>Internet of Things</span></li>
+                      <li>
+                        Tools:
+                        <span
+                          >ESP32, PIC16F88, Autodesk Eagle, MQTT Protocol</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item details end -->
+            </div>
+          </div>
+          <!-- Portfolio item end 4-->
+
+          <!-- Portfolio item start 5-->
+          <div class="portfolio-item" data-category="iot">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img
+                  src="img/projects/weather-station/01.jpg"
+                  alt="object-counting"
+                  data-screenshots="img/projects/weather-station/01.jpg, img/projects/weather-station/02.jpg, img/projects/weather-station/03.jpg, img/projects/weather-station/04.jpg, img/projects/weather-station/05.jpg, img/projects/weather-station/06.PNG"
+                />
+                <!--View project btn-->
+                <span class="view-project">View Project</span>
+              </div>
+              <p class="portfolio-item-title">Weather Station</p>
+              <!-- Portfolio item details start -->
+              <div class="portfolio-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      System to read environment variables and show them
+                      remotely.
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project Info:</h3>
+                    <ul>
+                      <li>Date: <span>2019</span></li>
+                      <li>Project: <span>Networking</span></li>
+                      <li>
+                        Tools:
+                        <span>PIC18F4550, HTML, CSS, PHP, phpMyAdmin</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item details end -->
+            </div>
+          </div>
+          <!-- Portfolio item end 5-->
+
+          <!-- Portfolio item start 6-->
+          <div class="portfolio-item" data-category="iot">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img
+                  src="img/projects/orchard/00.png"
+                  alt="object-counting"
+                  data-screenshots="img/projects/orchard/00.png, img/projects/orchard/01.jpg, img/projects/orchard/02.jpg, img/projects/orchard/03.jpg, img/projects/orchard/04.jpg, img/projects/orchard/05.jpg, img/projects/orchard/06.jpg, img/projects/orchard/07.jpg, img/projects/orchard/08.jpg, img/projects/orchard/09.jpg, img/projects/orchard/10.jpg, img/projects/orchard/11.jpg, img/projects/orchard/12.jpg, img/projects/orchard/13.jpg, img/projects/orchard/14.png"
+                />
+                <!--View project btn-->
+                <span class="view-project">View Project</span>
+              </div>
+              <p class="portfolio-item-title">Autonomous Orchard</p>
+              <!-- Portfolio item details start -->
+              <div class="portfolio-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Program an Intel Edison board to read sensors, turn on/off
+                      an electrical pump and send sensors data to a local
+                      server.
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project Info:</h3>
+                    <ul>
+                      <li>Date: <span>August - October 2018</span></li>
+                      <li>Project: <span>Internship I</span></li>
+                      <li>
+                        Tools:
+                        <span
+                          >Intel Edison Board, Arduino Sketch, phpMyAdmin,
+                          PHP</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item details end -->
+            </div>
+          </div>
+          <!-- Portfolio item end 6-->
+
+          <!-- Portfolio item start 7-->
+          <div class="portfolio-item" data-category="web-application">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img
+                  src="img/projects/notes-site/01.png"
+                  alt="object-counting"
+                  data-screenshots="img/projects/notes-site/01.png"
+                />
+                <!--View project btn-->
+                <span class="view-project">View Project</span>
+              </div>
+              <p class="portfolio-item-title">Notes App</p>
+              <!-- Portfolio item details start -->
+              <div class="portfolio-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Create a simple express app with a simple RESTful API that
+                      implements a CRUD for notes. Host your app in EC2 with
+                      Linux. Use nginx as a reverse proxy. Setup CI/CD process
+                      to build and deploy your app to AWS using CodeBuild.
+                    </p>
+                    <p>
+                      Create a simple notes app using React which uses the
+                      express app.
+                    </p>
+                    <p>
+                      <a href="http://d2lgx39xwp3czv.cloudfront.net/"
+                        >Clic here to visit the site project.</a
+                      >
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project Info:</h3>
+                    <ul>
+                      <li>Date: <span>2021</span></li>
+                      <li>Homework: <span>AWS</span></li>
+                      <li>
+                        Tools: <span>AWS, MySQL, React, Nginx, Express</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item details end -->
+            </div>
+          </div>
+          <!-- Portfolio item end 7-->
+        </div>
+        <!-- Portfolio items end -->
       </div>
-    </div>
-  </section>
-  <!--home section end-->
+    </section>
+    <!-- Portafolio Section end -->
 
-  <!-- About section start -->
-  <section class="about-section section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2 data-heading="Main Info">About me</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="about-img">
-          <div class="img-box inner-shadow">
-            <img src="img/myself.png" alt="profile-picture" class="outer-shadow"/>
-          </div>
-
-          <!-- social links start -->
-          <div class="social-links">
-            <a href="https://github.com/BlancasJ" target="_blank" class="outer-shadow hover-in-shadow"><i class="fab fa-github"></i></a>
-            <a href="mailto:Jorge.Blancas@theksquaregroup.com" target="_blank" class="outer-shadow hover-in-shadow"><i class="far fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/jorge-blancas-cruz-4b6b311aa/" target="_blank" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin"></i></a>
-          </div>
-          <!-- social links end -->
-
-        </div>
-        <div class="about-info">
-          <p><span>Hi! I am Jorge Blancas, a JavaScript Associate Software Engineer at the Ksquare University,</span> capable of working as a team, who always tries to think of a way to solve the problems that may arise. Keeping on going until the goal has met. Nevertheless, a flexible person who can change the strategies according to the needs.</p>
-          <a href="Resume - Jorge Blancas.pdf" target="_blank" class="btn-1 outer-shadow hover-in-shadow">Download Resume</a>
-          <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Contact Me</a>
-        </div>
-      </div>
-
-      <!-- About tabs start-->
-      <div class="row">
-        <div class="about-tabs">
-          <span class="tab-item outer-shadow active" data-target=".soft">Soft Skills</span>
-          <span class="tab-item" data-target=".software">Software</span>
-          <span class="tab-item" data-target=".hardware">Hardware</span>
-          <span class="tab-item" data-target=".experience">Experience</span>
-          <span class="tab-item" data-target=".education">Education</span>
-          <span class="tab-item" data-target=".acknowledges">Career Path</span>
-        </div>
-      </div>
-      <!-- About tabs end-->
-
-      <!-- Soft Skills-->
-      <!-- Skills Start -->
-      <div class="row">
-        <div class="skills soft tab-content active">
-          <div class="row">
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/dusk/48/000000/teamwork.png" title="Teamwork"/><span>Teamwork</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(80% - 14px);">
-                  <!--<span>80%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/officel/48/000000/trust.png" title="Trust"/><span>Trust</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(85% - 14px);">
-                  <!--<span>85%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/plasticine/48/000000/meeting-room.png" title="Negotiation of conflicts"/><span>Negotiation of conflicts</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/color/48/000000/sherlock-holmes.png" title="Problem solving"/><span>Porblem solving</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/fluent/48/000000/creativity.png" title="Creativity"/><span>Creativity</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px);">
-                  <!--<span>60%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/office/48/000000/wakeup-hill-on-stairs.png" title="Proactivity"/><span>Proactivity</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/office/48/000000/handle-with-care.png" title="Responsibility"/><span>Responsability</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(75% - 14px);">
-                  <!--<span>75%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
+    <!-- Contact section start -->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="Contact">Get In Touch</h2>
           </div>
         </div>
-      </div>
-      <!-- Skills end -->
-
-      <!-- Software Skills-->
-      <!-- Skills Start -->
-      <div class="row">
-        <div class="skills software tab-content">
-          <div class="row">
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/dusk/48/000000/c-programming.png" title="C language"/><span>C language</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px);">
-                  <!--<span>70%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/dusk/48/000000/python.png" title="Python"/><span>Python</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px);">
-                  <!--<span>60%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/fluent/48/000000/matlab.png" title="MATLAB"/><span>MATLAB</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px);">
-                  <!--<span>60%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/color/48/000000/javascript.png" title="JavaScript"/><span>JavaScript</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/dusk/48/000000/html-5.png" title="HTML"/><span>HTML</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/dusk/48/000000/css3.png" title="CSS"/><span>CSS</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/color/48/000000/nodejs.png" title="NodeJS"/><span>NodeJS</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(30% - 14px);">
-                  <!--<span>30%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" title="Amazon Web Services"/><span>Amazon Web Services</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(25% - 14px);">
-                  <!--<span>25%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/fluent/48/000000/mysql-logo.png" title="MySQL"/><span>MySQL</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(30% - 14px);">
-                  <!--<span>30%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/fluent-systems-filled/48/000000/github.png" title="GitHub"/><span>GitHub</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(65% - 14px);">
-                  <!--<span>65%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/color/48/000000/linux.png" title="Linux"/><span>Linux</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/color/48/000000/windows-logo.png" title="Windows"/><span>Windows</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/software/opencv.png" class="skills-images" title="OpenCV"/><span>OpenCV</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(30% - 14px);">
-                  <!--<span>30%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/software/eagle.png" class="skills-images" title="Autodesk Eagle"/><span>Autodesk Eagle</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px);">
-                  <!--<span>70%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/software/labVIEW.png" class="skills-images" title="LabVIEW"/><span>LabVIEW</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(40% - 14px);">
-                  <!--<span>40%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/software/latex-icon.png" class="skills-images" title="LATEX"/><span>LATEX</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px);">
-                  <!--<span>60%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/software/fpga.png" class="skills-images" title="VHDL"/><span>VHDL</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(20% - 14px);">
-                  <!--<span>20%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-          </div>
-        </div>
-      </div>
-      <!-- Skills end -->
-
-      <!-- Hardware Skills-->
-      <!-- Skills Start -->
-      <div class="row">
-        <div class="skills hardware tab-content">
-          <div class="row">
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/hardware/plc.png" title="Programmable Logic Controller: SIEMENS & Allen-Bradley" class="skills-images"/><span>PLC</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px);">
-                  <!--<span>70%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/hardware/chip.png" title="MICROCHIP PIC 16F & 18F" class="skills-images"/><span>MICROCHIP PIC</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(80% - 14px);">
-                  <!--<span>80%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/dusk/48/000000/motherboard.png" title="Intel Edison"/><span>Intel Edison</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/hardware/arduino.png" title="Arduino" class="skills-images" style="width: 70px;"/><span id="arduino">Arduino</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px);">
-                  <!--<span>70%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" title="Raspberry"/><span>Raspberry</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(40% - 14px);">
-                  <!--<span>40%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/cute-clipart/48/000000/motherboard.png" title="STM32"/><span>STM32</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(25% - 14px);">
-                  <!--<span>25%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/officel/48/000000/motherboard.png" title="ESP32"/><span>ESP32</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px);">
-                  <!--<span>60%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="https://img.icons8.com/plasticine/48/000000/memory-slot.png" title="PSoC"/><span>PSoC</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px);">
-                  <!--<span>50%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/hardware/power.png" title="Power Supply" class="skills-images"/><span>Power Supply</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(95% - 14px);">
-                  <!--<span>95%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/hardware/oscilloscope.png" title="Oscilloscope" class="skills-images"/><span>Oscilloscope</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(80% - 14px);">
-                  <!--<span>80%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/hardware/tester.png" title="Tester" class="skills-images"/><span>Tester</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(95% - 14px);">
-                  <!--<span>95%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/hardware/waveform-generator.png" title="Function waveform generator" class="skills-images"/><span>Waveform Generator</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px);">
-                  <!--<span>70%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-            <!-- Skill item start -->
-            <div class="skill-item">
-              <p><img src="img/hardware/soldering-iron.png" class="skills-images" title="Soldering iron"/><span>Soldering Iron</span></p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(75% - 14px);">
-                  <!--<span>75%</span>-->
-                </div>
-              </div>
-            </div>
-            <!-- Skill item end -->
-
-          </div>
-        </div>
-      </div>
-      <!-- Skills end -->
-
-      <!-- experience start -->
-      <div class="row">
-        <div class="experience tab-content">
-          <div class="row">
-            <div class="timeline">
-              <div class="row">
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-briefcase icon"></i>
-                    <span>February 2021 – Now</span>
-                    <h3>JavaScript Associate Software Engineer</h3>
-                    <h4>Ksquare University</h4>
-                    <p>Coursing the 16-week training program to become a Software Engineer I at The ksquare Group.</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-briefcase icon"></i>
-                    <span>January 2020 – April 2020</span>
-                    <h3>Intern</h3>
-                    <h4>Vazlo S.A. de C.V</h4>
-                    <p>Last internship developing a system for counting objects in real time by using computer vision in Fresnillo, Zacatecas.</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-briefcase icon"></i>
-                    <span>April 2019</span>
-                    <h3>Intern</h3>
-                    <h4>Biofractal</h4>
-                    <p>Second Internship supporting in software and hardware.</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-briefcase icon"></i>
-                    <span>August 2018 – September 2018</span>
-                    <h3>Intern</h3>
-                    <h4>Universidad Polit&eacute;cnica de Yucat&aacute;n</h4>
-                    <p>First internship developing an autonomous orchard using equiment and material given by the university.</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-briefcase icon"></i>
-                    <span>August 2014 – September 2015</span>
-                    <h3>Waiter</h3>
-                    <h4>Esvedra</h4>
-                    <p>Ensuring that all orders are correct and presented to each table on time, as well as suggesting appetizers and meals to customers based on the menu.</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-              </div>
+        <div class="row">
+          <!-- Contact Item Start -->
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-phone"></i>
+              <span>Phone</span>
+              <p>999 230 7270</p>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- experience end -->
+          <!-- Contact Item End -->
 
-      <!-- education start -->
-      <div class="row">
-        <div class="education tab-content">
-          <div class="row">
-            <div class="timeline">
-              <div class="row">
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-graduation-cap icon"></i>
-                    <span>2016 - 2020</span>
-                    <h3>Computational Embedded Systems Engineering</h3>
-                    <h4>Universidad Polit&eacute;cnica de Yucat&aacute;n</h4>
-                    
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-              </div>
+          <!-- Contact Item Start -->
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+              <p>
+                <a
+                  href="mailto:Jorge.Blancas@theksquaregroup.com"
+                  target="_blank"
+                  id="mailToMe"
+                  >Jorge.Blancas@theksquaregroup.com</a
+                >
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- education end -->
+          <!-- Contact Item End -->
 
-      <!-- acknowledges start -->
-      <div class="row">
-        <div class="acknowledges tab-content">
-          <div class="row">
-            <div class="timeline">
-              <div class="row">
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>December 2019</span>
-                    <h3>iTEP</h3>
-                    <p>Upper Intermediate - CERF B2</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>November 2019</span>
-                    <h3>"Internet de las cosas"</h3>
-                    <p>Workshop speaker</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>November 2019</span>
-                    <h3>"CC Compiler"</h3>
-                    <p>Workshop speaker</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>September 2019</span>
-                    <h3>Innovating MID</h3>
-                    <p>Become a member</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>March 2019</span>
-                    <h3>HackSureste</h3>
-                    <p>Competitor</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>December 2018</span>
-                    <h3>WAFR 13th</h3>
-                    <p>Staff</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>June 2018</span>
-                    <h3>COMIA 10th</h3>
-                    <p>Staff</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>May 2018</span>
-                    <h3>"Introduction to Research" - ELCIR</h3>
-                    <p>Participant</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>April 2018</span>
-                    <h3>Talent Land</h3>
-                    <p>Participant</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>February 2018</span>
-                    <h3>Invent For The Planet</h3>
-                    <p>Competitor</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>August 2017</span>
-                    <h3>"Android School with a Kotlin's pinch"</h3>
-                    <p>Participant</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>April 2017</span>
-                    <h3>UPY Programming Club</h3>
-                    <p>Founder</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-                <!-- timeline item start-->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <span>December 2016</span>
-                    <h3>"Primer Encuentro de Cómputo Científico"</h3>
-                    <p>Participant</p>
-                  </div>
-                </div>
-                <!-- timeline item end-->
-
-              </div>
+          <!-- Contact Item Start -->
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Ubication</span>
+              <p>M&eacute;rida, Yucat&aacute;n</p>
             </div>
           </div>
+          <!-- Contact Item End -->
         </div>
-      </div>
-      <!-- acknowledges end -->
-
-    </div>
-  </section>
-  <!-- About section end-->
-
-  <!-- interest section start -->
-  <div class="interest-section section" id="interests">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2 data-heading="Interests">What I like</h2>
-        </div>
-      </div>
-      <div class="row">
-
-        <!-- interest item start -->
-        <div class="interest-item">
-          <div class="interest-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <img src="https://img.icons8.com/fluent/48/000000/cloud-development.png"/>
-            </div>
-            <h3>IoT</h3>
-            <!-- can add a p tag to write a description-->
-          </div>
-        </div>
-        <!-- interest item end -->
-
-        <!-- interest item start -->
-        <div class="interest-item">
-          <div class="interest-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <img src="https://img.icons8.com/plasticine/48/000000/motherboard.png"/>
-            </div>
-            <h3>PCB Design</h3>
-            <!-- can add a p tag to write a description-->
-          </div>
-        </div>
-        <!-- interest item end -->
-
-        <!-- interest item start -->
-        <div class="interest-item">
-          <div class="interest-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <img src="https://img.icons8.com/dusk/48/000000/robot--v2.png"/>
-            </div>
-            <h3>Automation</h3>
-            <!-- can add a p tag to write a description-->
-          </div>
-        </div>
-        <!-- interest item end -->
-
-        <!-- interest item start -->
-        <div class="interest-item">
-          <div class="interest-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <img src="https://img.icons8.com/officel/48/000000/electronics.png"/>
-            </div>
-            <h3>Firmware Development</h3>
-            <!-- can add a p tag to write a description-->
-          </div>
-        </div>
-        <!-- interest item end -->
-
-        <!-- interest item start -->
-        <div class="interest-item">
-          <div class="interest-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <img src="https://img.icons8.com/dusk/48/000000/web.png"/>
-            </div>
-            <h3>Web Development</h3>
-            <!-- can add a p tag to write a description-->
-          </div>
-        </div>
-        <!-- interest item end -->
-
-        <!-- interest item start -->
-        <div class="interest-item">
-          <div class="interest-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <img src="https://img.icons8.com/fluent/48/000000/vision.png"/>
-            </div>
-            <h3>Computer Vision</h3>
-            <!-- can add a p tag to write a description-->
-          </div>
-        </div>
-        <!-- interest item end -->
-
-      </div>
-    </div>
-  </div>
-  <!-- interest section end -->
-
-  <!-- Portafolio Section start -->
-  <section class="portfolio-section section" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2 data-heading="Portfolio">Projects</h2>
-        </div>
-      </div>
-      <!-- portfolio filter start -->
-      <div class="row">
-        <div class="portfolio-filter">
-          <span class="filter-item outer-shadow active" data-target="all">All</span>
-          <span class="filter-item" data-target="web-application">Web Application</span>
-          <span class="filter-item" data-target="computer-vision">Computer Vision</span>
-          <span class="filter-item" data-target="automation">Automation</span>
-          <span class="filter-item" data-target="iot">Internet of Things</span>
-        </div>
-      </div>
-      <!-- portfolio filter end -->
-
-      <!-- Portfolio items start -->
-      <div class="row portfolio-items">
-
-        <!-- Portfolio item start 1-->
-        <div class="portfolio-item" data-category='web-application'>
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/projects/portfolio/01.PNG" alt="portfolio" data-screenshots='img/projects/portfolio/01.PNG, img/projects/portfolio/02.PNG, img/projects/portfolio/03.PNG, img/projects/portfolio/04.PNG, img/projects/portfolio/05.PNG, img/projects/portfolio/06.PNG'>
-              <!--View project btn-->
-              <span class="view-project">View Project</span>
-            </div>
-            <p class="portfolio-item-title">Personal Portfolio</p>
-            <!-- Portfolio item details start -->
-            <div class="portfolio-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>My personal portfolio which will be used to present myself to collegues or possible clients.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info:</h3>
-                  <ul>
-                    <li>Date: <span>April 2021</span></li>
-                    <li>Project: <span>Portfolio</span></li>
-                    <li>Tools: <span>JavaScript, CSS, HTML</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio item details end -->
-          </div>
-        </div>
-        <!-- Portfolio item end 1-->
-
-        <!-- Portfolio item start 2-->
-        <div class="portfolio-item" data-category='computer-vision'>
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/projects/object-counting/00.PNG" alt="object-counting" data-screenshots='img/projects/object-counting/00.PNG, img/projects/object-counting/01.png, img/projects/object-counting/02.png, img/projects/object-counting/03.png, img/projects/object-counting/04.png, img/projects/object-counting/05.png, img/projects/object-counting/06.png, img/projects/object-counting/video.mp4'>
-              <!--View project btn-->
-              <span class="view-project">View Project</span>
-            </div>
-            <p class="portfolio-item-title">Real-Time System For Object Counting</p>
-            <!-- Portfolio item details start -->
-            <div class="portfolio-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>At Vazlo SA de CV company, it is manually corroborated that products arrive complete, it means, if they order a batch of five hundred parts, a worker from the quality control area must count one by one that there are indeed five hundred parts. To optimize the process two partners and I had to develop a user-friendly system capable of counting five thousand different types of parts.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info:</h3>
-                  <ul>
-                    <li>Date: <span>January - April 2020</span></li>
-                    <li>Project: <span>Internship III</span></li>
-                    <li>Tools: <span>Python, OpenCV, MicroLogix 1400</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio item details end -->
-          </div>
-        </div>
-        <!-- Portfolio item end 2-->
-
-        <!-- Portfolio item start 3-->
-        <div class="portfolio-item" data-category='automation'>
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/projects/automation/01.jpeg" alt="object-counting" data-screenshots='img/projects/automation/01.jpeg, img/projects/automation/02.jpeg, img/projects/automation/03.jpeg, img/projects/automation/04.jpeg, img/projects/automation/05.jpeg, img/projects/automation/06.jpeg, img/projects/automation/07.jpeg, img/projects/automation/08.jpeg, img/projects/automation/09.jpeg, img/projects/automation/10.jpeg, img/projects/automation/11.jpeg, img/projects/automation/12.jpeg, img/projects/automation/13.jpeg, img/projects/automation/14.jpeg, img/projects/automation/video.mp4'>
-              <!--View project btn-->
-              <span class="view-project">View Project</span>
-            </div>
-            <p class="portfolio-item-title">Automate School Equipment</p>
-            <!-- Portfolio item details start -->
-            <div class="portfolio-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>Program different PLCs to complete a process, send data to a server and build a web app to view the information.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info:</h3>
-                  <ul>
-                    <li>Date: <span>October - December 2019</span></li>
-                    <li>Project: <span>Programmable Automatas</span></li>
-                    <li>Tools: <span>SIEMENS S7-1200, ESP32</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio item details end -->
-          </div>
-        </div>
-        <!-- Portfolio item end 3-->
-
-        <!-- Portfolio item start 4-->
-        <div class="portfolio-item" data-category='iot'>
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/projects/smart-room/00.jpeg" alt="object-counting" data-screenshots='img/projects/smart-room/00.jpeg, img/projects/smart-room/01.jpeg, img/projects/smart-room/02.jpeg, img/projects/smart-room/03.jpeg, img/projects/smart-room/04.jpeg, img/projects/smart-room/05.jpeg, img/projects/smart-room/06.jpeg, img/projects/smart-room/07.jpeg, img/projects/smart-room/08.jpeg, img/projects/smart-room/09.jpeg, img/projects/smart-room/10.jpeg, img/projects/smart-room/11.jpeg, img/projects/smart-room/12.jpeg'>
-              <!--View project btn-->
-              <span class="view-project">View Project</span>
-            </div>
-            <p class="portfolio-item-title">Smart Room</p>
-            <!-- Portfolio item details start -->
-            <div class="portfolio-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>Develop a system to control a room using a smartphone. Turn on one or more lamps and fans, vary their intensity, measure the temperature, humidity and alert when there is an anormal amount of smoke.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info:</h3>
-                  <ul>
-                    <li>Date: <span>October - December 2019</span></li>
-                    <li>Project: <span>Internet of Things</span></li>
-                    <li>Tools: <span>ESP32, PIC16F88, Autodesk Eagle, MQTT Protocol</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio item details end -->
-          </div>
-        </div>
-        <!-- Portfolio item end 4-->
-
-        <!-- Portfolio item start 5-->
-        <div class="portfolio-item" data-category='iot'>
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/projects/weather-station/01.jpg" alt="object-counting" data-screenshots='img/projects/weather-station/01.jpg, img/projects/weather-station/02.jpg, img/projects/weather-station/03.jpg, img/projects/weather-station/04.jpg, img/projects/weather-station/05.jpg, img/projects/weather-station/06.PNG'>
-              <!--View project btn-->
-              <span class="view-project">View Project</span>
-            </div>
-            <p class="portfolio-item-title">Weather Station</p>
-            <!-- Portfolio item details start -->
-            <div class="portfolio-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>System to read environment variables and show them remotely.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info:</h3>
-                  <ul>
-                    <li>Date: <span>2019</span></li>
-                    <li>Project: <span>Networking</span></li>
-                    <li>Tools: <span>PIC18F4550, HTML, CSS, PHP, phpMyAdmin</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio item details end -->
-          </div>
-        </div>
-        <!-- Portfolio item end 5-->
-
-        <!-- Portfolio item start 6-->
-        <div class="portfolio-item" data-category='iot'>
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/projects/orchard/00.png" alt="object-counting" data-screenshots='img/projects/orchard/00.png, img/projects/orchard/01.jpg, img/projects/orchard/02.jpg, img/projects/orchard/03.jpg, img/projects/orchard/04.jpg, img/projects/orchard/05.jpg, img/projects/orchard/06.jpg, img/projects/orchard/07.jpg, img/projects/orchard/08.jpg, img/projects/orchard/09.jpg, img/projects/orchard/10.jpg, img/projects/orchard/11.jpg, img/projects/orchard/12.jpg, img/projects/orchard/13.jpg, img/projects/orchard/14.png'>
-              <!--View project btn-->
-              <span class="view-project">View Project</span>
-            </div>
-            <p class="portfolio-item-title">Autonomous Orchard</p>
-            <!-- Portfolio item details start -->
-            <div class="portfolio-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>Program an Intel Edison board to read sensors, turn on/off an electrical pump and send sensors data to a local server.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info:</h3>
-                  <ul>
-                    <li>Date: <span>August - October 2018</span></li>
-                    <li>Project: <span>Internship I</span></li>
-                    <li>Tools: <span>Intel Edison Board, Arduino Sketch, phpMyAdmin, PHP</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio item details end -->
-          </div>
-        </div>
-        <!-- Portfolio item end 6-->
-
-        <!-- Portfolio item start 7-->
-        <div class="portfolio-item" data-category='web-application'>
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/projects/notes-site/01.png" alt="object-counting" data-screenshots='img/projects/notes-site/01.png'>
-              <!--View project btn-->
-              <span class="view-project">View Project</span>
-            </div>
-            <p class="portfolio-item-title">Notes App</p>
-            <!-- Portfolio item details start -->
-            <div class="portfolio-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>Create a simple express app with a simple RESTful API that implements a CRUD for notes. Host your app in EC2 with Linux. Use nginx as a reverse proxy. Setup CI/CD process to build and deploy your app to AWS using CodeBuild.</p>
-                  <p>Create a simple notes app using React which uses the express app.</p>
-                  <p><a href="http://d2lgx39xwp3czv.cloudfront.net/">Clic here to visit the site project.</a></p>
-                </div>
-                <div class="info">
-                  <h3>Project Info:</h3>
-                  <ul>
-                    <li>Date: <span>2021</span></li>
-                    <li>Homework: <span>AWS</span></li>
-                    <li>Tools: <span>AWS, MySQL, React, Nginx, Express</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio item details end -->
-          </div>
-        </div>
-        <!-- Portfolio item end 7-->
-
-      </div>
-      <!-- Portfolio items end -->
-
-    </div>
-  </section>
-  <!-- Portafolio Section end -->
-
-  <!-- Contact section start -->
-  <section class="contact-section section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2 data-heading="Contact">Get In Touch</h2>
-        </div>
-      </div>
-      <div class="row">
-
-        <!-- Contact Item Start -->
-        <div class="contact-item">
-          <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-phone"></i>
-            <span>Phone</span>
-            <p>999 230 7270</p>
-          </div>
-        </div>
-        <!-- Contact Item End -->
-
-        <!-- Contact Item Start -->
-        <div class="contact-item">
-          <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-envelope"></i>
-            <span>Email</span>
-            <p><a href="mailto:Jorge.Blancas@theksquaregroup.com" target="_blank" id='mailToMe'>Jorge.Blancas@theksquaregroup.com</a></p>
-          </div>
-        </div>
-        <!-- Contact Item End -->
-
-        <!-- Contact Item Start -->
-        <div class="contact-item">
-          <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Ubication</span>
-            <p>M&eacute;rida, Yucat&aacute;n</p>
-          </div>
-        </div>
-        <!-- Contact Item End -->
-
-      </div>
-      <!--<div class="row">
+        <!--<div class="row">
         <div class="contact-form">
           <form>
             <div class="row">
@@ -1221,65 +1925,78 @@
           </form>
         </div>
       </div>-->
-    </div>
-  </section>
-  <!-- Contact section end -->
-  
-  <!-- Portfolio popup start -->
-  <div class="pp portfolio-popup">
+      </div>
+    </section>
+    <!-- Contact section end -->
 
-    <div class="pp-details">
-      <div class="pp-details-inner">
-        <div class="pp-title">
-          <h2>Real-time system for object counting</h2>
-          <p>Category: <span class="pp-project-category">Web Application</span></p>
-        </div>
-        <div class="pp-project-details">
-          <div class="row">
-            <div class="description">
-              <h3>Project Brief:</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="info">
-              <h3>Project Info:</h3>
-              <ul>
-                <li>Date: <span>2020</span></li>
-                <li>Project: <span>xyz</span></li>
-                <li>Tools: <span>Python, OpenCV</span></li>
-              </ul>
+    <!-- Portfolio popup start -->
+    <div class="pp portfolio-popup">
+      <div class="pp-details">
+        <div class="pp-details-inner">
+          <div class="pp-title">
+            <h2>Real-time system for object counting</h2>
+            <p>
+              Category: <span class="pp-project-category">Web Application</span>
+            </p>
+          </div>
+          <div class="pp-project-details">
+            <div class="row">
+              <div class="description">
+                <h3>Project Brief:</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="info">
+                <h3>Project Info:</h3>
+                <ul>
+                  <li>Date: <span>2020</span></li>
+                  <li>Project: <span>xyz</span></li>
+                  <li>Tools: <span>Python, OpenCV</span></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="separator"></div>
+      <div class="separator"></div>
 
-    <div class="pp-main">
-      <div class="pp-main-inner">
-        <div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details <i class="fas fa-plus"></i></div>
-        <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
-        <img src="img/projects/object-counting/01.png" alt="img" class="pp-img outer-shadow">
-        <video src="img/projects/object-counting/video.mp4" class="pp-video outer-shadow hide-img-video"></video>
-        <div class="pp-counter">1 of 7</div>
+      <div class="pp-main">
+        <div class="pp-main-inner">
+          <div class="pp-project-details-btn outer-shadow hover-in-shadow">
+            Project Details <i class="fas fa-plus"></i>
+          </div>
+          <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+          <img
+            src="img/projects/object-counting/01.png"
+            alt="img"
+            class="pp-img outer-shadow"
+          />
+          <video
+            src="img/projects/object-counting/video.mp4"
+            class="pp-video outer-shadow hide-img-video"
+          ></video>
+          <div class="pp-counter">1 of 7</div>
+        </div>
+        <div class="pp-loader">
+          <div></div>
+        </div>
+        <!-- pp navigation start -->
+        <div class="pp-prev"><i class="fas fa-play"></i></div>
+        <div class="pp-next"><i class="fas fa-play"></i></div>
+        <!-- pp navigation end -->
       </div>
-      <div class="pp-loader">
-        <div></div>
-      </div>
-      <!-- pp navigation start -->
-      <div class="pp-prev"><i class="fas fa-play"></i></div>
-      <div class="pp-next"><i class="fas fa-play"></i></div>
-      <!-- pp navigation end -->
-
     </div>
-  </div>
-  <!-- Portfolio popup end -->
-  
+    <!-- Portfolio popup end -->
 
-<!-- main js -->
-<script src="js/main.js"></script>
-<!-- font awesome -->
-<script src="https://kit.fontawesome.com/a067bce81d.js" crossorigin="anonymous"></script>
-</body>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a067bce81d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-
