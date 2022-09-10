@@ -1437,6 +1437,10 @@ img {
   word-break: break-word;
   text-decoration: none;
 }
+
+.linkedin-atag {
+  color: var(--text-black-600);
+}
 /**/
 #mailToMe {
   text-decoration: none;
