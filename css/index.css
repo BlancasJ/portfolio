@@ -1,0 +1,505 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: block;
+  /*background-image: url(../images/fondo2.jpg);*/
+  background-color: whitesmoke;
+  background-size: cover;
+  z-index: -2;
+}
+
+#gridContainer {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto;
+  /*height: 100vh;*/
+}
+
+/** NAV MENU  **/
+
+#navGridItem {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-items: left;
+}
+
+#navFlexContainer {
+  margin: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  list-style: none;
+  border-radius: 12px;
+  border: none;
+  background-color: #1cced4;
+}
+
+.navItemFlex {
+  margin: 10px;
+  width: 120px;
+  height: 50px;
+  padding: 10px;
+  font-size: 22px;
+  font-style: oblique;
+  text-align: center;
+  border-radius: 12px;
+  border: none;
+  background-color: #95e0db;
+  border: 5px solid whitesmoke;
+}
+
+.navItemFlex a {
+  color: black;
+}
+
+.navItemFlex a:hover {
+  color: whitesmoke;
+}
+
+/** SECTION MYSELF TITLE  **/
+
+#myselfTitle {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-items: left;
+}
+
+#myselfTitleFlexContainer {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#myselfTitleItemFlex {
+  margin: 0px 0px 0px 200px;
+  padding: 0px;
+  font-size: 50px;
+  font-style: oblique;
+  color: #1c71d4;
+  text-align: center;
+}
+
+/** SECTION MYSELF INFO  **/
+
+#myselfInfo {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-items: left;
+}
+
+#myselfFlexContainer {
+  margin: 5px 5px 20px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+}
+
+#myselfItemFlexC {
+  margin: 5px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#myselfItemFlexC:nth-child(2) {
+  flex-grow: 2;
+}
+
+#myPhoto {
+  margin: 30px 20px 20px 20px;
+  width: 160px;
+  height: 170px;
+  border-radius: 100px;
+}
+
+#myName {
+  margin: 5px 0px 20px 0px;
+  width: 450px;
+  padding: 5px;
+  font-size: 30px;
+  font-style: oblique;
+  color: #0cb5d3;
+  text-align: left;
+}
+
+#myInfo {
+  margin: 5px;
+  width: 450px;
+  padding: 5px;
+  font-size: 20px;
+  font-style: oblique;
+  color: #000000;
+  text-align: justify;
+}
+
+/** SECTION EDUCATION TITLE  **/
+
+#educationTitle {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  align-items: right;
+}
+
+#educationTitleFlexContainer {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+#educationTitleItemFlex {
+  margin: 0px 200px 0px 0px;
+  padding: 0px;
+  font-size: 50px;
+  font-style: oblique;
+  color: #1c71d4;
+  text-align: center;
+}
+
+/** SECTION EDUCATION INFO **/
+
+#education {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  align-items: right;
+}
+
+#educationFlexContainer {
+  margin: 5px 5px 20px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+#educationItemFlex {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#schoolName {
+  /*margin: 5px 0px 20px 0px;*/
+  width: 450px;
+  padding: 2px;
+  font-size: 30px;
+  font-style: oblique;
+  color: #0cb5d3;
+  text-align: left;
+}
+
+#schoolInfo {
+  margin: 0px 5px 5px 5px;
+  width: 450px;
+  padding: 5px;
+  font-size: 20px;
+  font-style: oblique;
+  color: #000000;
+  text-align: justify;
+}
+
+#schoolLogo {
+  margin: 0px 20px 0px 20px;
+  width: 280px;
+  height: 120px;
+}
+
+/** SECTION SKILLS TITLE  **/
+
+#skillsTitle {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  align-items: left;
+}
+
+#skillsTitleFlexContainer {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+#skillsTitleItemFlex {
+  margin: 0px 0px 0px 200px;
+  padding: 0px;
+  font-size: 50px;
+  font-style: oblique;
+  color: #1c71d4;
+  text-align: center;
+}
+
+/** SECTION SKILLS INFO  **/
+
+#skills {
+  grid-column: 1/2;
+  grid-row: 7/8;
+  align-items: left;
+}
+
+#skillsFlexContainer {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+/* LOGOS SIZE */
+
+#python {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 100px;
+  height: 100px;
+}
+
+#cp {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 140px;
+  height: 140px;
+}
+
+#js {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 100px;
+  height: 100px;
+}
+
+#htmli {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 115px;
+  height: 115px;
+}
+
+#cssi {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 70px;
+  height: 100px;
+}
+
+#git {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 180px;
+  height: 80px;
+}
+
+#latex {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 180px;
+  height: 180px;
+}
+
+#matlab {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 180px;
+  height: 180px;
+}
+
+#vhdl {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 170px;
+  height: 150px;
+}
+
+#picc {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 110px;
+  height: 110px;
+}
+
+#proteus {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 150px;
+  height: 150px;
+}
+
+#arduino {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 150px;
+  height: 90px;
+}
+
+#keil {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 200px;
+  height: 80px;
+}
+
+#psoc {
+  /*padding: 10px;
+  margin: 10px;*/
+  width: 250px;
+  height: 250px;
+}
+
+#labview {
+  /* padding: 10px;
+  margin: 10px; */
+  width: 115px;
+  height: 110px;
+}
+
+#tia {
+  /* padding: 10px;
+  margin: 10px; */
+  width: 160px;
+  height: 70px;
+}
+
+#gx {
+  /* padding: 10px;
+  margin: 10px; */
+  width: 135px;
+  height: 135px;
+}
+
+#rasp {
+  /* padding: 10px;
+  margin: 10px; */
+  width: 140px;
+  height: 100px;
+}
+
+#eagle {
+  /* padding: 10px;
+  margin: 10px; */
+  width: 160px;
+  height: 80px;
+}
+
+#orcad {
+  /* padding: 10px;
+  margin: 10px; */
+  width: 180px;
+  height: 120px;
+}
+
+/** SECTION HOBBIES TITLE **/
+
+#hobbiesTitle {
+  grid-column: 1/2;
+  grid-row: 8/9;
+  align-items: left;
+}
+
+#hobbiesTitleFlexContainer {
+  margin: 5px 200px 5px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+#hobbiesTitleItemFlex {
+  margin: 0px;
+  padding: 0px;
+  font-size: 50px;
+  font-style: oblique;
+  color: #1c71d4;
+  text-align: center;
+}
+
+/** SECTION HOBBIES INFO **/
+
+#hobbies {
+  grid-column: 1/2;
+  grid-row: 9/10;
+  align-items: left;
+}
+
+#hobbiesFlexContainer {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  list-style: none;
+}
+
+.hobbiesItemFlex {
+  margin: 10px;
+  width: 120px;
+  height: 50px;
+  padding: 10px;
+  font-size: 22px;
+  font-style: oblique;
+  text-align: center;
+  border-radius: 12px;
+  border: none;
+  background-color: rgba(69, 235, 212, 0.5);
+  color: rgb(0, 0, 0);
+}
+
+.hobbiesItemFlex:hover {
+  color: rgb(223, 56, 187);
+}
+
+/** FOOTER CONTACT ME **/
+
+#footerGridItem {
+  grid-column: 1/2;
+  grid-row: 10/11;
+  align-items: left;
+}
+
+#footerFlexContainer {
+  margin: 50px 10px 20px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  list-style: none;
+  border-radius: 12px;
+  border: none;
+  background-color: #95e0db;
+}
+
+.footerItemFlex {
+  text-align: center;
+  width: 85px;
+  height: 85px;
+  margin: 5px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0px 5px 0px 5px;
+  padding: 0px 5px 0px 5px;
+}

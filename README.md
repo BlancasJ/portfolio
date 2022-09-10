@@ -1,2 +1,3 @@
-# portfolio
-Draft of my working portfolio.
+# Portfolio
+***
+Professional Portfolio made using vanilla JavaScript, HTML, and CSS
