@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
-body{
+body {
   display: block;
   /*background-image: url(../images/fondo2.jpg);*/
   background-color: whitesmoke;
@@ -109,7 +110,6 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
 }
 
 #myselfItemFlexC:nth-child(2) {
@@ -218,7 +218,6 @@ body{
   width: 280px;
   height: 120px;
 }
-
 
 /** SECTION SKILLS TITLE  **/
 
@@ -486,7 +485,7 @@ body{
   list-style: none;
   border-radius: 12px;
   border: none;
-  background-color: #95e0db; 
+  background-color: #95e0db;
 }
 
 .footerItemFlex {
@@ -499,7 +498,8 @@ body{
 img {
   width: 80px;
   height: 80px;
+  max-width: 80px;
+  max-height: 80px;
   margin: 0px 5px 0px 5px;
   padding: 0px 5px 0px 5px;
 }
-
